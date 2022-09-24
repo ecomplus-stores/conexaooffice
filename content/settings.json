@@ -4,23 +4,23 @@
   "primary_color": "#1f366a",
   "theme": {
     "bootswatch": "_",
-    "custom": "_"
+    "custom": "clean-white"
   },
   "bg_color": "#ffffff",
   "repository": "ecomplus-stores/conexaooffice",
-  "logo": "/img/uploads/logo.png",
+  "logo": "/img/uploads/logotipo-office-01.png",
   "name": "Conexão Office - Loja de Móveis",
   "short_name": "Conexão Office",
   "lang": "pt_br",
   "currency": "BRL",
   "mini_logo": "",
-  "font_family": "Montserrat",
+  "font_family": "Poppins",
   "favicon": "/img/uploads/favicon.png",
-  "icons_font": "_",
+  "icons_font": "font-awesome",
   "country_code": "BR",
   "secondary_color": "#966400",
-  "icon": "/img/icon.png",
+  "icon": "/img/uploads/logotipo-office-01.png",
   "store_id": 51317,
-  "description": "conexaooffice",
-  "large_icon": "/img/large-icon.png"
+  "description": "Nada como trabalhar em um ambiente bonito, agradável, organizado, capaz de ampliar a produtividade dos seus colaboradores. Essa é a proposta da Conexão Office, que há mais de 20 anos fornece móveis para escritórios e uso profissional. Sempre em sintonia com as principais tendências do mobiliário, a Conexão Office atende às necessidades de empresas de vários portes, desde home offices até corporações com vários postos de trabalho. Para tanto, possui um portfólio em que design, resistência, ergonomia e conforto unem-se para responder com qualidade às mais diversas demandas. Mas não é só isso. Atendimento e preços competitivos fazem da Conexão Office referência no mercado. Loja com que você deve contar sempre.\n\nBem-vindo à Conexão Office. Escritórios com estilo!\n",
+  "large_icon": "/img/uploads/logotipo-office-01.png"
 }
