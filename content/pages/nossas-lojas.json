@@ -1,12 +1,7 @@
 {
   "title": "Nossas Lojas",
-  "body": "V﻿enham conhecer nossa loja, estamos localizados na: \\\n**Avenida São João, 1895 - Santa Cecília, São Paulo - SP - CEP: 01211-100.**\n\n![Imagem da faixa de nossa loja localizada em Santa Cecília.](/img/uploads/20220923_134943-editar.png)",
+  "body": "V﻿enham conhecer nossa uma de nossas loja em São Paulo: \n\n![Imagem da faixa de nossa loja localizada em Santa Cecília.](/img/uploads/20220923_134943-editar.png)\n\n\n\n\n\n</p>Estamos localizados na:</p>\\\n</p>**Avenida São João, 1895 - Santa Cecília, São Paulo - SP - CEP: 01211-100.**</p>\n\n<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14631.537527137074!2d-46.6508007!3d-23.5366605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb304d6b168d24df5!2sConex%C3%A3o%20Office!5e0!3m2!1spt-BR!2sbr!4v1664306247705!5m2!1spt-BR!2sbr\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
   "meta_title": "Nossas Lojas | Conexão Office",
   "meta_description": "Venham Conhecer Nossas Lojas em São Paulo, Será um Prazer Recebê-los!",
-  "sections": [
-    {
-      "type": "custom-content",
-      "markdown": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14631.537527137074!2d-46.6508007!3d-23.5366605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb304d6b168d24df5!2sConex%C3%A3o%20Office!5e0!3m2!1spt-BR!2sbr!4v1664306247705!5m2!1spt-BR!2sbr\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-    }
-  ]
+  "sections": []
 }
