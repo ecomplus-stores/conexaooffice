@@ -1,5 +1,5 @@
 {
   "css": "",
-  "html_head": "",
+  "html_head": "<!-- Start of  Zendesk Widget script -->\n<script id=\"ze-snippet\" src=\"https://static.zdassets.com/ekr/snippet.js?key=828f3ab1-0113-4245-9839-8544effa8afc\"> </script>\n<!-- End of  Zendesk Widget script -->",
   "html_body": ""
 }
