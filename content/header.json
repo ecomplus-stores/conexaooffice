@@ -1,7 +1,9 @@
 {
   "marketing_stripe": {
-    "text": "",
-    "link": ""
+    "text": "BAZAR ONLINE! Clique e confira.",
+    "link": "https://conexaohome.com.br/bazar-de-moveis-decoracao-utensilios-para-cozinha",
+    "background": "#d9d9d9",
+    "color": "#e26d03"
   },
   "contacts_stripe": {
     "pages": [],
@@ -10,13 +12,64 @@
   },
   "categories_list": {
     "featured": [
-      "/produtos?Produtos"
+      "/conjuntos?Conjuntos",
+      "/moveis?Móveis",
+      "/decoracao?Decoração",
+      "/cozinha?Cozinha",
+      "/sala-de-estar?Sala de Estar",
+      "/sala-de-jantar?Sala de Jantar",
+      "/quarto?Quarto",
+      "/bazar-de-moveis-decoracao-utensilios-para-cozinha?Bazar"
     ],
-    "random": 7,
+    "random": 0,
     "full_width": true
   },
   "desktop_megamenu": true,
   "search_input": true,
-  "alphabetical_order_submenu": false,
-  "full_width_submenu": true
+  "alphabetical_order_submenu": true,
+  "full_width_submenu": false,
+  "menusecundario": {
+    "listamenusecundario": [
+      {
+        "img": "/img/uploads/saladeestar.svg",
+        "title": "Sala de estar",
+        "link": "/sala-de-estar"
+      },
+      {
+        "img": "/img/uploads/saladejantar.svg",
+        "title": "Sala de jantar",
+        "link": "/sala-de-jantar"
+      },
+      {
+        "img": "/img/uploads/quarto.svg",
+        "title": "Quarto",
+        "link": "/quarto"
+      },
+      {
+        "img": "/img/uploads/escritorio.svg",
+        "title": "Escritório",
+        "link": "/escritorio"
+      },
+      {
+        "img": "/img/uploads/nossaslojas.svg",
+        "title": "Nossas Lojas",
+        "link": "/nossaslojas"
+      },
+      {
+        "img": "/img/uploads/impermeabilizacao.svg",
+        "title": "Impermeabilização",
+        "link": "/impermeabilizacao"
+      },
+      {
+        "img": "/img/uploads/alugueldemoveis.svg",
+        "title": "Aluguel de imóveis",
+        "link": "/aleguel-de-imoveis"
+      },
+      {
+        "img": "/img/uploads/vendacorporativa.svg",
+        "title": "Venda Corporativa",
+        "link": "/venda-corporativa"
+      }
+    ]
+  }
 }

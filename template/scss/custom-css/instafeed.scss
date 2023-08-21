@@ -1,0 +1,80 @@
+.container-instafeed h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #1b1b1b;
+    gap: 10px;
+}
+
+.container-instafeed h4 {
+    display: none;
+    text-align: center;
+    margin-top: 0;
+}
+
+.container-instafeed h4 a {
+    color: #f37021;
+    font-size: 19px;
+}
+
+.container-instafeed h3 span svg {
+    vertical-align: sub;
+    margin-left: 5px;
+}
+#mt-instafeed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#mt-instafeed > a {
+    width: 25%;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+}
+
+#mt-instafeed > a > img, #mt-instafeed > a > video {
+    max-width: 100%;
+    max-height: 290px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
+    transition: .5s;
+}
+
+#mt-instafeed > a > img:hover, #mt-instafeed > a > video:hover {
+    transform: scale(1.1);
+}
+
+#mt-instafeed .message-error-instafeed {
+    font-size: 20px;  
+    color: #808080;
+}
+
+#mt-instafeed .message-error-instafeed a {
+    font-size: 20px;  
+    color: #808080;
+}
+
+@media screen and (max-width: 768px) {
+
+  #mt-instafeed {
+    flex-wrap: wrap;
+}
+
+#mt-instafeed > a {
+    width: 40%;
+}
+}
+
+@media screen and (max-width: 992px){
+    .container-instafeed h3 {
+        font-size: 20px;
+    }
+    .container-instafeed h3 span svg {
+        width: 29px;
+    }
+}

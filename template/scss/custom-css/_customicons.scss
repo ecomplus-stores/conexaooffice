@@ -1,0 +1,50 @@
+.i-sort {
+  &::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    display: block;
+    background: url(/img/short-icon.svg) center center no-repeat;
+    background-size: contain;
+  }
+}
+
+select.custom-select {
+  background: #fff url(/img/short-icon.svg) right 0.75rem center/8px 10px no-repeat!important;
+}
+
+
+// ARROW SLIDER GLIDER
+.glide--slider {
+  .glide__arrows {
+    button.glide__arrow {
+      width: 35px!important;
+      height: 35px!important;
+      background-color: transparent;
+      .i-chevron-left {
+        width: 35px!important;
+        height: 35px!important;
+        &::before {
+          content: '';
+          display: inline-block;
+          background: transparent url(/img/sliders/arrow-left.svg) center center no-repeat;
+          background-size: contain;
+          width: 35px!important;
+          height: 35px!important;
+        }
+      }
+      .i-chevron-right {
+        width: 35px!important;
+        height: 35px!important;
+        &::before {
+          content: '';
+          display: inline-block;
+          background: transparent url(/img/sliders/arrow-right.svg) center center no-repeat;
+          background-size: contain;
+          width: 35px!important;
+          height: 35px!important;
+        }
+      }
+    }
+  }
+}

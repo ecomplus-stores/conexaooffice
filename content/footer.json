@@ -1,20 +1,69 @@
 {
   "description": {
-    "title": "",
+    "title": "Sobre Nós",
     "text": ""
   },
   "links_1": {
-    "list_pages": true,
-    "title": "Institucional",
-    "list": []
+    "list_pages": false,
+    "title": "Informações úteis",
+    "list": [
+      {
+        "text": "Nossas Lojas",
+        "url": "https://mtsolucoestest.netlify.app/pages/nossas-lojas"
+      },
+      {
+        "text": "Formas de Pagamento",
+        "url": "https://mtsolucoestest.netlify.app/pages/pagamentos"
+      },
+      {
+        "text": "Política de Privacidade",
+        "url": "https://mtsolucoestest.netlify.app/pages/politica-de-privacidade"
+      },
+      {
+        "text": "Trocas e Devoluções",
+        "url": "https://mtsolucoestest.netlify.app/pages/politica-de-trocas-e-devolucoes"
+      },
+      {
+        "text": "Política de Entregas e Envios",
+        "url": "https://mtsolucoestest.netlify.app/pages/politicas-de-entrega"
+      },
+      {
+        "text": "Sobre Nós",
+        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
+      }
+    ]
   },
   "links_2": {
-    "list_categories": true,
-    "title": "Navegação",
-    "list": []
+    "title": "Nossas Lojas",
+    "list": [
+      {
+        "text": "Loja Santa Cecília - SP Móveis @ AV. São João, 1915/1907, Santa Cecília",
+        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
+      },
+      {
+        "text": "Loja Santa Cecília - SP Decor @ AV. São João, 1915/1907, Santa Cecília",
+        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
+      },
+      {
+        "text": "Loja Arouche - Centro SP  @ AV. São João, 1915/1907, Santa Cecília",
+        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
+      },
+      {
+        "text": "Loja São José dos Campos - Jardim América @ AV. São João, 1915/1907, Santa Cecília",
+        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
+      },
+      {
+        "text": "Loja São José dos Campos - SP -Decor @ AV. São João, 1915/1907, Santa Cecília",
+        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
+      },
+      {
+        "text": "Loja Campinas - Jardim Santana @ AV. São João, 1915/1907, Santa Cecília",
+        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
+      }
+    ]
   },
   "contacts": {
-    "title": "Contatos",
+    "title": "Dúvidas? Fale conosco",
     "phone_wpp": true,
     "socials": true,
     "email": true,
@@ -27,20 +76,22 @@
     }
   ],
   "payment_methods": {
-    "bb": true,
+    "bb": false,
     "visa": true,
-    "boleto": true,
-    "aura": false,
+    "boleto": false,
+    "aura": true,
     "banrisul": false,
     "elo": true,
     "hipercard": false,
     "hsbc": false,
-    "bradesco": true,
+    "bradesco": false,
     "santander": false,
     "mastercard": true,
     "citibank": false,
+    "diners": true,
     "mais": false,
-    "itau": true
+    "amex": true,
+    "itau": false
   },
   "credits": ""
 }

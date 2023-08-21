@@ -1,47 +1,205 @@
 {
-  "meta_title": "Conexão Office - Loja de Móveis",
-  "meta_description": "Desde Home Office até Grandes Corporações. Portfólio com Design, Resistência e Ergonomia. Mais de 20 Anos no Mercado. Sempre em Sintonia com as Principais Marcas do Mercado!",
+  "meta_title": "Conexão Home | O Melhor da Decoração em Sua Casa",
+  "meta_description": "Aqui  na Conexão Home Você Encontra Produtos Exclusivos Para Tornar Seu Lar Mais Aconchegante e Acolhedor. Não Perca e Venha Conferir!",
   "sections": [
     {
       "type": "banner-slider",
-      "autoplay": 9000,
-      "full_width": false,
+      "autoplay": 2000,
+      "full_width": true,
       "slides": [
         {
-          "img": "/img/uploads/rect89.webp",
-          "link": "/headset",
-          "alt": "Headset banner",
-          "start": "2020-04-11T05:54:06.750Z",
-          "end": "2020-12-31T03:00:00.000Z",
-          "mobile_img": "/img/uploads/headphone.webp"
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-bazer-desck-1.jpg",
+          "mobile_img": "/img/uploads/banner-bazer-mobile-1.jpg",
+          "link": "https://conexaohome.com.br/bazar-de-moveis-decoracao-utensilios-para-cozinha"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner2.webp",
-          "alt": "Banner sample two",
-          "mobile_img": "/img/uploads/passion.webp"
+          "img": "/img/uploads/banner-rotativo-cozinha-completa-1900x600.png",
+          "mobile_img": "/img/uploads/rotativo-mobile-cozinha-completa-600-400-px-1-.jpg",
+          "link": "https://conexaohome.com.br/linha-burt"
         }
       ]
     },
     {
       "type": "info-bar",
-      "enabled": true
+      "enabled": false
+    },
+    {
+      "type": "banners-grid-mt",
+      "identificador": "content-banner-tarja",
+      "banners": [
+        {
+          "img": "/img/icons-tarja/pin.svg",
+          "link": "#",
+          "mobile_img": "",
+          "alt": "Conheça nossas lojas"
+        },
+        {
+          "img": "/img/icons-tarja/juros.svg",
+          "link": "#",
+          "mobile_img": "",
+          "alt": "Tudo em até 12x sem juros"
+        },
+        {
+          "img": "/img/icons-tarja/frete.svg",
+          "link": "#",
+          "mobile_img": "",
+          "alt": "Entregamos em todo o brasil"
+        },
+        {
+          "img": "/img/icons-tarja/whatsapp.svg",
+          "link": "#",
+          "mobile_img": "",
+          "alt": "Compre pelo whatsapp"
+        },
+        {
+          "img": "/img/icons-tarja/store.svg",
+          "link": "#",
+          "mobile_img": "",
+          "alt": "Retire na loja"
+        }
+      ]
+    },
+    {
+      "type": "banners-grid",
+      "identificador": "banner-triple",
+      "banners": [
+        {
+          "img": "/img/uploads/triple1.webp",
+          "link": "https://conexaohome.com.br/linha-burt",
+          "mobile_img": "",
+          "alt": "Itens de decoração"
+        },
+        {
+          "img": "/img/uploads/triple2.webp",
+          "link": "https://conexaohome.com.br/linha-chestersield",
+          "mobile_img": "",
+          "alt": "Móveis diferenciados"
+        },
+        {
+          "img": "/img/uploads/triple3.webp",
+          "link": "https://conexaohome.com.br/poltrona",
+          "mobile_img": "",
+          "alt": "Móveis versáteis "
+        }
+      ]
+    },
+    {
+      "type": "banners-grid",
+      "identificador": "banner-tarja",
+      "banners": [
+        {
+          "img": "/img/uploads/icone_revendedor.svg",
+          "alt": "Revendedor autorizado Dazie Metais",
+          "link": "https://teste.com.br"
+        },
+        {
+          "img": "/img/uploads/icone_entrega.svg",
+          "alt": "Revendedor autorizado Dazie Metais"
+        },
+        {
+          "img": "/img/uploads/icone_desconto.svg",
+          "alt": "10% de Desconto na sua primeira compra."
+        }
+      ]
+    },
+    {
+      "type": "newsletter-mt",
+      "active": true
     },
     {
       "type": "collection-shelf",
       "shuffle": true,
-      "collection_id": null,
-      "sort": "views",
-      "title": "Destaques",
+      "limit": 8,
+      "page": 1,
+      "collection_id": "63597c6073321213f8be3fb9:categories:Linha Burt:/linha-burt",
+      "title": "Linha Burt",
       "headless": false,
-      "limit": 12,
-      "page": 1
+      "sort": "sales"
     },
     {
-      "type": "dynamic-showcase",
-      "load_more": false,
-      "sort": "news"
+      "type": "responsive-banner",
+      "identificador": "full-banner-home",
+      "img": "/img/uploads/single1.webp",
+      "link": "https:bannersingle.com.br",
+      "mobile_img": "/img/uploads/single1m.webp"
+    },
+    {
+      "type": "banners-grid",
+      "identificador": "section-categories-banners",
+      "banners": [
+        {
+          "img": "/img/uploads/1.webp",
+          "alt": "Na sua cozinha",
+          "link": "https://link.com.br",
+          "mobile_img": ""
+        },
+        {
+          "img": "/img/uploads/2.webp",
+          "link": "https://link.com.br",
+          "alt": "Na sua sala",
+          "mobile_img": ""
+        },
+        {
+          "img": "/img/uploads/3.webp",
+          "link": "https://link.com.br",
+          "alt": "no seu quintal",
+          "mobile_img": ""
+        },
+        {
+          "img": "/img/uploads/4.webp",
+          "link": "https://link.com.br",
+          "alt": "Na sala de jantar",
+          "mobile_img": ""
+        },
+        {
+          "img": "/img/uploads/5.webp",
+          "link": "https://link.com.br",
+          "alt": "Mesa",
+          "mobile_img": ""
+        },
+        {
+          "img": "/img/uploads/6.webp",
+          "link": "https://link.com.br",
+          "alt": "Pratos",
+          "mobile_img": ""
+        },
+        {
+          "img": "/img/uploads/7.webp",
+          "link": "https://link.com.br",
+          "alt": "Artesanatos",
+          "mobile_img": ""
+        },
+        {
+          "img": "/img/uploads/8.webp",
+          "link": "https://link.com.br",
+          "alt": "Utensílios ",
+          "mobile_img": ""
+        }
+      ]
+    },
+    {
+      "type": "shelfs-nav",
+      "shuffle": true,
+      "limit": 8,
+      "page": 1,
+      "collection_ids": [
+        "64caae6f5e606903707d6deb:collections:Cozinha:/cozinha",
+        "64b5a8ff5e6069037068109a:collections:Quem comprou:/quem-comprou"
+      ],
+      "shelfs_title": "Onde vai começar sua conexão?",
+      "sort": "views"
+    },
+    {
+      "type": "responsive-banner",
+      "identificador": "full-banner-home",
+      "img": "/img/uploads/single2.webp",
+      "link": "https://link.com.br",
+      "mobile_img": "/img/uploads/single2m.webp",
+      "alt": "Conheça nossas lojas"
     }
   ]
 }

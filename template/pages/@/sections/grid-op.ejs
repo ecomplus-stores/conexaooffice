@@ -1,0 +1,67 @@
+<% if(Array.isArray(opt.banners) && opt.banners.length) { %>
+  <div class="box-bg-falam">
+    <div class="title-box">
+      <div class="title">
+        <div class="html-clearfix">
+          <%- opt.html %>
+        </div>
+      </div>
+      <div class="title-blow"></div>
+    </div>
+    <div class="smartphone"></div>
+    <div class="depoimento">
+      <img srg="/img/uploads/depoimentos.jpg">
+    </div>
+  </div>
+  <section id="opinioes" class="brands-carousel">
+    <div
+      class="glide"
+      data-autoplay="<%= opt.autoplay %>"
+      data-per-view="3"
+      data-per-view-md="3"
+      data-per-view-sm="2"
+      data-per-view-xs="1"
+    >
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides brands-carousel__list">
+          <% opt.banners.forEach(({ alt, link, img }) => { %>
+            <li class="glide__slide brands-carousel__item">
+              <a href="<%= link ? `/${link}` : '#' %>">
+                <% if (img) { %>
+                  <img src="<%= img %>" alt="<%= alt %>" class="img-fluid">
+                <% } else { %>
+                  <h4><%= alt %></h4>
+                <% } %>
+              </a>
+            </li>
+          <% }) %>
+        </ul>
+
+        <% if (opt.banners.length) { %>
+          <div
+            class="glide__arrows glide__arrows--outer"
+            data-glide-el="controls"
+          >
+            <button
+              class="btn glide__arrow glide__arrow--left"
+              data-glide-dir="<"
+              aria-label="<%= _.dictionary('previous') %>"
+            >
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button
+              class="btn glide__arrow glide__arrow--right"
+              data-glide-dir=">"
+              aria-label="<%= _.dictionary('next') %>"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        <% } %>
+      </div>
+    </div>
+  </section>
+
+  <%
+}
+%>

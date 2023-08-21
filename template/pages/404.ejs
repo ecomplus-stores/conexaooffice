@@ -13,10 +13,20 @@
 
     <div class="container py-5">
       <article id="fallback-404">
-        <span class="text-muted">
-          404 - Not found
-        </span>
+        <div class="icon">
+          <img src="/img/icon404.svg" alt="">
+        </div>
+        <h2>Página não encontrada</h2>
       </article>
+      <div class="content-sitemap">
+        <h2>Mapa do site</h2>
+        <ul>
+          <li><a href="/moveis">/Móveis</a></li>
+          <li><a href="/decoracao">/Decoração</a></li>
+          <li><a href="/cozinha">/Cozinha</a></li>
+          <li><a href="/sala-de-estars">/Sala de estar</a></li>
+        </ul>
+      </div>
     </div>
 
     <%- await include('@/layout/footer') %>

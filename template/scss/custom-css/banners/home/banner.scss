@@ -1,0 +1,87 @@
+.page--home {
+  .info-bar {
+    > .container {
+      max-width: 1349px;
+      padding: 0;
+    }
+  }
+
+  // Banner tarja
+  .banner-tarja {
+    .container {
+      max-width: var(--max-width-full);
+      .row {
+        > div {
+          .banner {
+            background-color: var(--pink-regular);
+            padding: 1rem;
+            a {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              min-height: auto!important;
+              &:hover {
+                text-decoration: none;
+              }
+              picture {
+                width: 47px;
+                height: 47px;
+                margin: 0 1rem 0 0;
+              }
+              p {
+                font-size: 1.4rem;
+                color: var(--grey-70);
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.banner-triple {
+  .container {
+    max-width: var(--max-width-full)!important;
+  }
+}
+
+// CONTENT BANNERS CATEGRIAS
+.section-categories-banners {
+  h1 {
+    display: table;
+    margin: 0 auto 3rem auto;
+    border-bottom: 2px solid var(--primary-color);
+    padding: 0 1rem;
+  }
+  > .container {
+    max-width: 1250px!important;
+    > .row {
+      justify-content: center;
+      gap: 4rem;
+      > div {
+        flex: 0 0 26rem;
+        max-width: 26rem;
+        padding: 0;
+      }
+    }
+  }
+}
+
+// FULL BANNER
+.full-banner-home {
+  > .container {
+    max-width: 100%;
+    padding: 0;
+    .banner {
+      width: 100%;
+      picture {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+}

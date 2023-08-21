@@ -1,0 +1,20 @@
+<%
+const header = _.cms('header') || {}
+%>
+
+<% if (header.menusecundario) { %>
+  <div class="secundary-menu-mt" id="menu-secundario-mobile">
+    <ul>
+      <% header.menusecundario.listamenusecundario.forEach(({ link, title, img })=> { %>
+        <li>
+          <a href="<%= link %>">
+            <div class="icon">
+              <img src="<%= img %>" alt="">
+            </div>
+            <%= title %>
+          </a>
+        </li>
+        <% }) %>
+    </ul>
+  </div>
+<% } %>
