@@ -250,7 +250,7 @@ const isCentralizedLogo = header.centralized_logo
     <% if (categories && categories.length) { %>
     <div class="d-none d-lg-block <%= isCategoriesNavFull ? 'col-12 order-lg-last' : 'col' %> header__nav-block">
       
-      <%- await include('@/layout/menusecundario') %>
+      <!-- <%- await include('@/layout/menusecundario') %> -->
       
       <nav class="header__nav<%= isCategoriesNavFull ? ' header__nav--full' : '' %>">
         <% categories.forEach(({ slug, name, _id}) => { %>
