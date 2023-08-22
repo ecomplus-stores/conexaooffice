@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
   <g id="icone_desconto" transform="translate(-904 -1249)">
-    <rect id="Retângulo_56" data-name="Retângulo 56" width="47" height="47" rx="5" transform="translate(904 1249)" fill="#e26d03"/>
+    <rect id="Retângulo_56" data-name="Retângulo 56" width="47" height="47" rx="5" transform="translate(904 1249)" fill="#1F366A"/>
     <text id="_" data-name="%" transform="translate(921.5 1278)" fill="#fff" font-size="15" font-family="BarlowSemiCondensed-Medium, Barlow" font-weight="500"><tspan x="0" y="0">%</tspan></text>
     <g id="Polígono_4" data-name="Polígono 4" transform="translate(914 1259)" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path d="M13.5,0l2.485,1.9,3.037-.716,1.5,2.748,3.064.588.261,3.125,2.561,1.79-1.025,2.962L27,15.076l-2.135,2.286.391,3.111-2.875,1.216-.9,3-3.118-.065L16.322,27,13.5,25.665,10.678,27,8.64,24.626l-3.118.065-.9-3L1.744,20.474l.391-3.111L0,15.076l1.616-2.683L.59,9.431l2.561-1.79.261-3.125,3.064-.588,1.5-2.748,3.037.716Z" stroke="none"/>
