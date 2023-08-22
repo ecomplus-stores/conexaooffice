@@ -12,14 +12,13 @@
   },
   "categories_list": {
     "featured": [
-      "/conjuntos?Conjuntos",
-      "/moveis?Móveis",
-      "/decoracao?Decoração",
-      "/cozinha?Cozinha",
-      "/sala-de-estar?Sala de Estar",
-      "/sala-de-jantar?Sala de Jantar",
-      "/quarto?Quarto",
-      "/bazar-de-moveis-decoracao-utensilios-para-cozinha?Bazar"
+      "/ambientes?Ambientes",
+      "/cadeiras?Cadeiras",
+      "/produtos/armarios?Armários",
+      "/produtos/auditorio?Auditório",
+      "/produtos/cadeiras?Cadeiras",
+      "/produtos/lousas?Lousas",
+      "/produtos/refeitorio?Refeitório"
     ],
     "random": 0,
     "full_width": true
