@@ -280,6 +280,7 @@ div[data-mbz-button-popup-wrapper] {
 }
 #fmais-loyalty__bottom__open__btn {
   z-index: 900!important;
+  display: none!important;
 }
 // HEADER
 .header {
@@ -300,33 +301,60 @@ div[data-mbz-button-popup-wrapper] {
         display: none;
       }
       .content-search {
-        width: 33.6rem;
-        input {
-          border: 1px solid var(--grey-c8);
-          border-radius: 1.2rem 0;
-          height: 4.6rem;
-          font-size: 1.6rem;
-          &::placeholder {
-            color: #262626 !important;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        form.header__search {
+          width: 29.4rem;
+          input {
+            border: 1px solid var(--grey-c8);
+            border-radius: 1.2rem 0;
+            height: 4.6rem;
+            font-size: 1.6rem;
+            &::placeholder {
+              color: #262626 !important;
+            }
+            &:-ms-input-placeholder {
+              color: #262626 !important;
+            }
+            &::-ms-input-placeholder {
+              color: #262626 !important;
+            }
           }
-          &:-ms-input-placeholder {
-            color: #262626 !important;
-          }
-          &::-ms-input-placeholder {
-            color: #262626 !important;
+          button {
+            right: 0.7rem;
+            i {
+              color: var(--primary-color);
+              svg {
+                height: 1.9rem;
+              }
+            }
           }
         }
-        button {
-          right: 0.7rem;
-          i {
-            color: var(--primary-color);
+        a.mini-btn-orcamento {
+          display: flex;
+          gap: 1rem;
+          border: 0;
+          background: transparent;
+          text-decoration: none;
+          .icons {
             svg {
-              height: 1.9rem;
+              path {
+                fill: var(--primary-color);
+              }
             }
+          }
+          span {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            font-weight: 500;
           }
         }
       }
       #suport-button {
+        display: none;
+      }
+      .mini-btn-orcamento {
         display: none;
       }
     }
@@ -414,13 +442,6 @@ div[data-mbz-button-popup-wrapper] {
       align-items: center;
       justify-content: center;
       > div {
-        &:last-child {
-          margin-right: 0;
-          a {
-            background-color: var(--primary-color) !important;
-            color: var(--white) !important;
-          }
-        }
         > a {
           font-size: 1.267rem;
           color: var(--grey-70);
@@ -632,7 +653,7 @@ header[class~="mini-header"] {
     .left-block {
       width: 40%;
       display: flex;
-      gap: 5rem;
+      gap: 1.5rem;
       align-items: center;
       div.content-btn-menu {
         display: block !important;
@@ -653,20 +674,37 @@ header[class~="mini-header"] {
         width: 36.6rem !important;
         form {
           width: 100%;
-        }
-        input {
-          width: 100%;
-          border: 1px solid var(--grey-c8);
-          border-radius: 1.2rem 0;
-          height: 2.7rem;
-          font-size: 1.4rem;
-        }
-        button {
-          i {
-            color: var(--primary-color);
-            svg {
-              height: 1.9rem;
+          input {
+            width: 100%;
+            border: 1px solid var(--grey-c8);
+            border-radius: 1.2rem 0;
+            height: 2.7rem;
+            font-size: 1.4rem;
+          }
+          button {
+            i {
+              color: var(--primary-color);
+              svg {
+                height: 1.9rem;
+              }
             }
+          }
+        }
+        a.mini-btn-orcamento {
+          display: flex;
+          gap: 1rem;
+          border: 0;
+          background: transparent;
+          text-decoration: none;
+          .icons {
+            svg {
+              path {
+                fill: #FFF;
+              }
+            }
+          }
+          span {
+            color: #FFF;
           }
         }
       }
@@ -759,7 +797,7 @@ header[class~="mini-header"] {
             background-color: rgba(#fff, $alpha: 0.9) !important;
 
             font-size: 1rem;
-            font-weight: 100;
+            font-weight: 500;
           }
         }
       }
@@ -3484,8 +3522,10 @@ footer {
   }
   .header {
     background-color: var(--white);
-    padding: 1rem 0 1.5rem;
+    padding: 1rem 0 1.5rem .5rem 1.5rem;
+    box-shadow: none;
     .topo {
+      padding-bottom: .7rem;
       margin-bottom: 0;
       width: 98%;
       margin: 0 auto;
@@ -3500,18 +3540,52 @@ footer {
           bottom: -44px;
           background-color: #fff;
           left: 0;
-          padding: 0.5rem 0 1rem 0;
+          padding: 0.5rem 0 1.5rem 0;
           form {
             width: 92%;
             margin: 0 auto;
             input[type="search"] {
-              height: 3.6rem;
+              height: 2.7rem;
               font-size: 1.4rem;
+              background-color: var(--primary-color);
+              &::placeholder {
+                color: #FFF !important;
+              }
+              &:-ms-input-placeholder {
+                color: #FFF !important;
+              }
+              &::-ms-input-placeholder {
+                color: #FFF !important;
+              }
             }
+            .header__search-btn {
+              top: -0.1rem;
+              i {
+                color: #FFF!important;
+                svg {
+                  path {
+                    fill: #FFF;
+                  }
+                }
+              }
+            }
+          }
+          .mini-btn-orcamento {
+            display: none!important;
           }
         }
         #suport-button {
           display: block;
+        }
+        .mini-btn-orcamento {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          padding-left: 1rem;
+          span {
+            font-size: 12px;
+            font-weight: 600;
+          }
         }
       }
       .center-block {
@@ -3559,6 +3633,7 @@ footer {
           a {
             p {
               text-align: center;
+              min-height: 34px;
             }
           }
         }
