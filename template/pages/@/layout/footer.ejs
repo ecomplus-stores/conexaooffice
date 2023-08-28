@@ -31,11 +31,7 @@ const themeCustom = _.settings.theme.custom || ''
       <div class="description">
         <p><%- footer.description.text || _.settings.description %></p>
       </div>
-      <% if (footer.contacts.socials) { %>
-      <p class="footer__social">
-        <%- await include('@/layout/inc/networks', { _, contacts }) %>
-      </p>
-      <% } %>
+      
     </div>
     <div class="content-institucional">
       <% if (footer.links_1.list_pages || footer.links_1.list.find(({ url }) => url)) { %>
@@ -130,6 +126,11 @@ const themeCustom = _.settings.theme.custom || ''
         </li>
         <% } %>
       </ul>
+      <% if (footer.contacts.socials) { %>
+        <p class="footer__social">
+          <%- await include('@/layout/inc/networks', { _, contacts }) %>
+        </p>
+        <% } %>
     </div>
     <div class="content-lojas">
       <h2>Conheça Nossas lojas</h2>
