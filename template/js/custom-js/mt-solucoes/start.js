@@ -30,6 +30,8 @@ window.addEventListener("load", (event) => {
 });
 
 
+localStorage.getItem('orcamento') == null ? localStorage.setItem("orcamento", "[]") : null;
+
 // LOGIN ACCOUNT PAGE
 
 

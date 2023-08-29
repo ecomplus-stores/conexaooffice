@@ -1088,7 +1088,18 @@ header[class~="mini-header"] {
     }
   }
 }
-
+.buttonBudget {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 0px 12px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
 // LISTAGEM DE PRODUTO
 .collection-shelf {
   .products-carousel {
@@ -1970,6 +1981,7 @@ footer.foo {
     }
     .content-contato {
       .list-unstyled {
+        margin-bottom: 2rem;
         li {
           margin-bottom: 1.4rem;
           font-size: 1.4rem;
@@ -2004,6 +2016,7 @@ footer.foo {
       }
       .footer__social {
         a {
+          opacity: 1;
           i {
             width: 22px;
             height: 22px;
