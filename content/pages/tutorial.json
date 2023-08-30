@@ -1,0 +1,10 @@
+{
+  "title": "Tutorial",
+  "sections": [
+    {
+      "type": "breadcrumbs",
+      "enabled": true
+    }
+  ],
+  "body": "<!--StartFragment-->\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nisi. Provident iure alias, id ipsa hic quis quasi, dolor nihil, porro quam cupiditate. Molestias necessitatibus accusantium molestiae. Tenetur, corrupti eos?\n\n<!--EndFragment-->"
+}
