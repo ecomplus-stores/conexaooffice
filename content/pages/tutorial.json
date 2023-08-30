@@ -2,6 +2,10 @@
   "title": "Tutorial",
   "sections": [
     {
+      "type": "responsive-banner",
+      "img": "/img/uploads/banner.png"
+    },
+    {
       "type": "breadcrumbs",
       "enabled": true
     }
