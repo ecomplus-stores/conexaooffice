@@ -88,6 +88,12 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
         <div class="col">
           <h1 class="product__name">
             <%= _.ecomUtils.name(_.state) %>
+            <div class="content-compartilhar">
+              <a href="#">
+                <span>Compartilhar</span>
+                <div><img src="/img/ionic-md-share.svg" alt=""></div>
+              </a>
+            </div>
           </h1>
           <p class="product__sku">
             COD: <%= _.state.sku %>
