@@ -1,28 +1,18 @@
-import { createElement } from "../../utils/createElementHTML";
+function cloneContentNotification () {
+  document.querySelector('.product__sku').appendChild(document.querySelector('.offers-notification'))
+}
+
+function cloneShareContent () {
+  document.querySelector('#product').before(document.querySelector('.content-compartilhar'))
+  document.querySelector('.content-compartilhar').appendChild(document.querySelector('.share').parentElement);
+}
+
+function cloneFavoriteContent () {
+  document.querySelector('#product-gallery').before(document.querySelector('.product__favorite'))
+}
 
 export const initProductPageMobile = () => {
-
-  // Move Name
-  const productName = document.querySelector('.product__name');
-  document.querySelector('#product').before(productName);
-  
-  // Move favorite button and sku
-  const contentButtonFavorite = createElement('div', 'content-favorite-mobile');
-  document.querySelector('#product').prepend(contentButtonFavorite);
-
-  setTimeout(() => {
-    contentButtonFavorite.appendChild(document.querySelector('.product__sku'))
-    contentButtonFavorite.appendChild(document.querySelector('a.product__favorite'))
-  }, 2100);
-
-  // Move content share button
-  setTimeout(() => {
-    document.querySelector('#product-actions').prepend(document.querySelector('.content-favorite-button'))
-  }, 2100);
-  
-  // Move alerts
-  setTimeout(() => {
-    document.querySelector('.product__rating').before(document.querySelector('.content-buttons-cloned'))
-  }, 2100);
-
+  cloneContentNotification ();
+  cloneShareContent ();
+  cloneFavoriteContent ();
 }

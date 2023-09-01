@@ -14,8 +14,7 @@ document.querySelector('.header') ? initHeader() : null;
 // CATEGORY PAGE
 document.querySelector('#page-categories') ? initCategoryPage() : null;
 
-//PRODUCT PAGE
-document.querySelector('#page-products') ? initProductPage() : null; 
+
 
 // HOME
 document.querySelector('.page--home') ? addClassOnClasses() : null;
@@ -25,6 +24,9 @@ document.querySelector('footer.foo') ? initFooter() : null;
 
 
 window.addEventListener("load", (event) => {
+
+  //PRODUCT PAGE
+  document.querySelector('#page-products') ? initProductPage() : null; 
   window.matchMedia("(max-width: 768px)").matches ? initMobile() : null;
   
 });
