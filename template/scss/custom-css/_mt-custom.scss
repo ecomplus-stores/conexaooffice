@@ -1431,11 +1431,11 @@ header[class~="mini-header"] {
                   .search-engine__option-range {
                     gap: 2rem;
                     input {
-                      height: 2.7rem;
+                      height: 1.5rem;
                       border-radius: 0.5rem;
                       border: 1px solid var(--grey-70);
-                      padding: 0.7rem 1rem 1rem 1rem;
-                      font-size: 1.3rem;
+                      padding: 1rem;
+                      font-size: 1.2rem;
                     }
                     .input-group-append {
                       width: 2.7rem;
@@ -1464,14 +1464,22 @@ header[class~="mini-header"] {
                 .search-engine__filter {
                   button[data-toggle="collapse"] {
                     font-size: 1.5rem;
-                    margin-bottom: 1rem;
+                    margin: 0 0 1rem 0!important;
                     color: var(--black);
                     font-weight: 500;
                     display: flex;
                     align-items: center;
+                    justify-content: center;
+                    padding: 0;
                     i {
-                      color: var(--primary-color);
-                      margin-right: 1rem;
+                      width: 2.7rem;
+                      background-color: var(--primary-color);
+                      opacity: 1;
+                      color: #FFF;
+                      margin: 0;
+                      padding: 0.6rem 0;
+                      border-radius: 0!important;
+                      justify-content: center;
                     }
                   }
                   .search-engine__option {
@@ -1487,7 +1495,7 @@ header[class~="mini-header"] {
                       &::before {
                         width: 15px;
                         height: 15px;
-                        border-radius: 0.5rem;
+                        border-radius: 0;
                         border: 1px solid var(--primary-color);
                       }
                     }
@@ -1524,30 +1532,140 @@ header[class~="mini-header"] {
             }
             // LIST PRODUCTS
             .search-engine__nav {
-              background-color: transparent;
+              background-color: var(--primary-color);
               .container {
+                padding: 0 .5rem;
                 .search-engine__count {
                   font-size: 1.4rem;
+                  color: #FFF;
                 }
                 .search-engine__toggles {
-                  button {
+                  position: relative;
+                  position: relative;
+                  justify-content: space-between;
+                  flex-direction: row-reverse;
+                  background-color: var(--primary-color);
+                  padding: .5rem;
+                  gap: 1rem;
+                  > button {
+                    background: #FFF!important;
+                    margin: 0!important;
                     background: transparent;
                     color: var(--primary-color);
                     font-size: 1.4rem;
                     font-weight: 500;
                     margin-right: 1rem;
                     border: 0;
+                    border-radius: 0;
                   }
-                  .dropdown {
-                    background: transparent;
+                  > .dropdown {
+                    background: #FFF!important;
                     color: var(--primary-color);
                     font-size: 1.4rem;
                     font-weight: 500;
                     border: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    button {
+                      background: #FFF!important;
+                      padding: 0 1rem;
+                      margin: 0!important;
+                      border: 0;
+                      color: var(--primary-color);
+                      font-size: 1.4rem;
+                      font-weight: 500;
+                      margin-right: 1rem;
+
+                      display: flex;
+                      align-items: center;
+                      flex-direction: row-reverse;
+                      gap: 1rem;
+                    }
                     .dropdown-menu {
                       a {
                         color: var(--primary-color);
                         font-size: 1.2rem;
+                      }
+                    }
+                  }
+                  .search-engine__aside {
+                    position: absolute!important;
+                    width: 100%;
+                    height: 50vh;
+                    z-index: 100;
+                    top: 5rem;
+                    padding: .5rem;
+                    border-radius: 0;
+                    border: 1px solid var(--primary-color);
+                    .card-header {
+                      user-select: none;
+                      color: transparent;
+                      border: 0;
+                      button {
+                        margin: 0;
+                      }
+                    }
+                    .card-body {
+                      /* width */
+                      &::-webkit-scrollbar {
+                        width: 5px;
+                      }
+
+                      /* Track */
+                      &::-webkit-scrollbar-track {
+                        border-radius: 0;
+                      }
+                      
+                      /* Handle */
+                      &::-webkit-scrollbar-thumb {
+                        background: var(--primary-color);
+                      }
+                      .search-engine__filter--price {
+                        h5 {
+                          color: #000;
+                        }
+                        .search-engine__option {
+                          label {
+                            &::before {
+                              border-radius: 0;
+                              border: 1px solid var(--primary-color);
+                            }
+                          }
+                        }
+                        .search-engine__option-range {
+                          .input-group-append {
+                            border-radius: 0;
+                            button {
+                              display: flex;
+                              align-items:center;
+                              justify-content:center;
+                              margin: 0;
+                              i {
+                                margin: 0;
+                              }
+                            }
+                          }
+                          input {
+                            border-radius: 0;
+                            border: 1px solid var(--primary-color);
+                          }
+                        }
+                      }
+                      .search-engine__filter {
+                        > button {
+                          width: 100%;
+                          flex-direction: row-reverse;
+                          justify-content: space-between;
+                        }
+                      }
+                    }
+                    .card-footer{
+                      button {
+                        background-color: var(--primary-color);
+                        color: #FFF;
+                        border-radius: 0;
+
                       }
                     }
                   }
@@ -3678,6 +3796,63 @@ footer {
   }
 }
 
+// TUTORIAL PAGE
+#tutorial {
+  h1.alert {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;   
+  }
+  .title-list {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    span {
+      padding: 0.5rem 1.3rem;
+      border-radius: 0 12px;
+      background-color: var(--primary-color);
+      color: #FFF!important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    li {
+      width: 30%;
+      .descricao {
+        margin-bottom: 3rem;
+        .title-tutorial-item {
+          color: var(--primary-color);
+          border-bottom: 2px solid var(--primary-color);
+          padding: 0 2rem;
+          display: inline-block;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 1.3rem;
+          span {
+            color: var(--primary-color);
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   #fmais-loyalty__bottom__open__btn {
     top: 27% !important;
@@ -3895,6 +4070,8 @@ footer {
             padding: 0 !important;
             font-size: 1.5rem !important;
             margin-bottom: 1rem;
+            background-color: transparent!important;
+            color: var(--primary-color)!important;
           }
           .btn-close-submenu-menu {
             &::before {
@@ -4055,12 +4232,9 @@ footer {
           padding: 0 0.5rem;
           #search-engine {
             // FILTROS
-            .search-engine__aside, .search-engine__aside-open {
-              display: none;
-            }
             .search-engine__nav {
               padding: 0;
-              
+              background-color: transparent!important;
               .container {
                 padding: 0;
                 flex-direction: column;
@@ -4070,12 +4244,15 @@ footer {
                 }
                 .search-engine__count {
                   text-align: center;
+                  display: none;
                 }
                 .search-engine__toggles {
+                  position: relative;
                   justify-content: space-between;
                   flex-direction: row-reverse;
                   background-color: var(--primary-color);
                   padding: .5rem;
+                  margin-bottom: 0!important;
                   > button {
                     background: #FFF!important;
                     margin: 0!important;
@@ -4083,6 +4260,7 @@ footer {
                   > .dropdown {
                     background: #FFF!important;
                   }
+                  
                 }
               }
             }
