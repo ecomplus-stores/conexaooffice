@@ -30,6 +30,10 @@
       {
         "text": "Sobre Nós",
         "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
+      },
+      {
+        "text": "Locação de Móveis",
+        "url": "https://marketing.conexaohomeblog.com.br/locacao-de-moveis"
       }
     ]
   },
@@ -60,7 +64,8 @@
         "text": "Loja Campinas - Jardim Santana @ AV. São João, 1915/1907, Santa Cecília",
         "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
       }
-    ]
+    ],
+    "list_categories": false
   },
   "contacts": {
     "title": "Dúvidas? Fale conosco",
