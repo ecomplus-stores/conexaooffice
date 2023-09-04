@@ -10,15 +10,15 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-bazer-desck-1.jpg",
-          "mobile_img": "/img/uploads/banner-bazer-mobile-1.jpg",
+          "img": "/img/uploads/rotativos_1.png",
+          "mobile_img": "/img/uploads/rotativos_1.png",
           "link": "https://conexaohome.com.br/bazar-de-moveis-decoracao-utensilios-para-cozinha"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-rotativo-cozinha-completa-1900x600.png",
-          "mobile_img": "/img/uploads/rotativo-mobile-cozinha-completa-600-400-px-1-.jpg",
+          "img": "/img/uploads/rotativos_2.png",
+          "mobile_img": "/img/uploads/rotativos_2.png",
           "link": "https://conexaohome.com.br/linha-burt"
         }
       ]
@@ -91,7 +91,6 @@
         }
       ]
     },
-    
     {
       "type": "collection-shelf",
       "shuffle": true,
