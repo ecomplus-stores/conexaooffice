@@ -73,21 +73,21 @@
       "banners": [
         {
           "img": "/img/uploads/mosaicosdesk_1.png",
-          "link": "https://conexaohome.com.br/linha-burt",
+          "link": "",
           "mobile_img": "",
-          "alt": "Itens de decoração"
+          "alt": ""
         },
         {
           "img": "/img/uploads/mosaicosdesk_2.png",
-          "link": "https://conexaohome.com.br/linha-chestersield",
+          "link": "https://conexaooffice.netlify.app/produtos/cadeiras",
           "mobile_img": "",
-          "alt": "Móveis diferenciados"
+          "alt": "Cadeiras para Escritório"
         },
         {
           "img": "/img/uploads/mosaicosdesk_3.png",
-          "link": "https://conexaohome.com.br/poltrona",
+          "link": "https://conexaooffice.netlify.app/moveis-de-aco",
           "mobile_img": "",
-          "alt": "Móveis versáteis "
+          "alt": ""
         }
       ]
     },
@@ -166,7 +166,7 @@
       "type": "responsive-banner",
       "identificador": "full-banner-home",
       "img": "/img/uploads/rodapedesk.png",
-      "link": "https://link.com.br",
+      "link": "https://conexaohome.netlify.app/pages/nossas-lojas",
       "mobile_img": "/img/uploads/rodape.png",
       "alt": "Conheça nossas lojas"
     }
