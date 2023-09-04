@@ -38,6 +38,10 @@
       {
         "text": "Aluguel de Móveis",
         "url": "https://conexaooffice.netlify.app/pages/aluguel-de-moveis"
+      },
+      {
+        "text": "Pague com Cartão BNDES",
+        "url": "https://conexaooffice.netlify.app/pages/pague-com-cartao-bndes"
       }
     ]
   },
