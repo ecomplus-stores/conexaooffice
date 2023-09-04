@@ -104,9 +104,9 @@
     {
       "type": "responsive-banner",
       "identificador": "full-banner-home",
-      "img": "/img/uploads/single1.webp",
+      "img": "/img/uploads/mosaicosdesk_4.png",
       "link": "https:bannersingle.com.br",
-      "mobile_img": "/img/uploads/single1m.webp"
+      "mobile_img": "/img/uploads/mosaicos_4.png"
     },
     {
       "type": "banners-grid",
