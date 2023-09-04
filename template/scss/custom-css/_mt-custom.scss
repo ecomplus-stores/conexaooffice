@@ -118,16 +118,18 @@ select {
 #cart-quickview {
   .minicart__aside {
     background: #F8F8F8 !important;
-    border-radius: 1.5rem 0 0 0;
+    border-radius: 0;
+    border: 1px solid var(--primary-color);
     .card-header {
       position: relative;
-      width: 95%;
+      width: 100%;
       margin: 0 auto;
       text-align: center;
       font-size: 1.5rem;
       text-transform: uppercase;
-      background-color: transparent;
+      background-color: var(--primary-color);
       border-bottom: 1px solid var(--primary-color);
+      color: #FFF;
       button.close {
         position: absolute;
         top: 50%;
@@ -136,15 +138,21 @@ select {
         span {
           font-size: 3rem;
           font-weight: 400;
+          color: #fff;
         }
       }
     }
     .minicart__body {
+      -webkit-box-shadow: inset 0 0 0 0 transparent!important;
+        -moz-box-shadow: inset 0 0 0 0 transparent!important;
+        box-shadow: inset 0 0 0 0 transparent!important;
       .minicart__list {
         .cart-item {
           border-bottom: 1px solid var(--grey-c8);
+          padding: 0 0 1rem 0;
           .cart-item__container {
             .cart-item__thumb {
+              border: 1px solid var(--grey-70);
             }
             .cart-item__data {
               .close {
@@ -170,7 +178,7 @@ select {
               }
               .cart-item__quantity {
                 width: 50px;
-                float: left;
+                float: right;
                 select {
                   color: var(--primary-color);
                 }
@@ -180,9 +188,11 @@ select {
                 float: left;
               }
               .cart-item__prices {
-                color: var(--primary-color);
-                font-size: 1.6rem;
+                color: var(--black);
+                font-size: 1.4rem;
                 margin: 0;
+                float: left;
+                font-weight: 500;
               }
             }
           }
@@ -215,22 +225,29 @@ select {
     .card-footer {
       background: transparent;
       .minicart__summary {
+        align-items: flex-start;
         > span {
-          font-size: 1.6rem;
-          color: var(--grey-70);
+          font-size: 1.4rem;
+          color: var(--primary-color);
           font-weight: 500;
           text-transform: uppercase;
         }
         .minicart__subtotal {
           .prices {
             .prices__value {
-              font-size: 2rem;
-              color: var(--primary-color);
+              font-size: 1.4rem;
+              color: var(--black);
               margin-bottom: 0.5rem;
             }
             .prices__discount {
               color: var(--grey-70);
               font-size: 1.2rem;
+            }
+            > span {
+              .prices__installments, .prices__discount {
+                color: var(--black)!important;
+                font-size: 1.2rem;
+              }
             }
           }
         }
@@ -248,7 +265,7 @@ select {
         -webkit-box-shadow: inset -4px -6px 4px -2px rgba(0, 0, 0, 0.25);
         -moz-box-shadow: inset -4px -6px 4px -2px rgba(0, 0, 0, 0.25);
         box-shadow: inset -4px -6px 4px -2px rgba(0, 0, 0, 0.25);
-        border-radius: 0px 12px;
+        border-radius: 0px;
         margin-top: 1rem;
         i {
           display: none;
@@ -256,7 +273,8 @@ select {
       }
       a[href="/app/#/cart"] {
         height: 4.2rem;
-        color: var(--primary-color);
+        color: var(--gold);
+        font-weight: 400;
         font-size: 1.4rem;
         padding: 0;
         display: flex;
@@ -264,7 +282,8 @@ select {
         justify-content: center;
         background-color: transparent !important;
         box-shadow: 0px 3px 6px #00000029;
-        border-radius: 0px 12px;
+        border-radius: 0px!important;
+        border: 1px solid var(--gold);
         i {
           display: none;
         }
@@ -1412,6 +1431,9 @@ header[class~="mini-header"] {
                 }
                 .search-engine__filter--price {
                   margin-bottom: 2rem;
+                  > a {
+                    display: none;
+                  }
                   h5 {
                     font-size: 1.5rem;
                     margin-bottom: 1.6rem;
@@ -3797,57 +3819,139 @@ footer {
 }
 
 // TUTORIAL PAGE
-#tutorial {
-  h1.alert {
-    color: var(--primary-color);
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin-bottom: 4rem;
-  }
-  .title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2rem;   
-  }
-  .title-list {
-    color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    span {
-      padding: 0.5rem 1.3rem;
-      border-radius: 0 12px;
-      background-color: var(--primary-color);
-      color: #FFF!important;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+article[class="page page--pages/tutorial"] {
+  .responsive-baner {
+    margin-top: 0;
+    .container {
+      max-width: 100vw;
+      padding: 0;
     }
   }
-  ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    li {
-      width: 30%;
-      .descricao {
-        margin-bottom: 3rem;
-        .title-tutorial-item {
-          color: var(--primary-color);
-          border-bottom: 2px solid var(--primary-color);
-          padding: 0 2rem;
-          display: inline-block;
-          margin-bottom: 1rem;
-        }
-        p {
-          font-size: 1.3rem;
-          span {
+  #tutorial {
+    h1.alert {
+      position: relative;
+      color: var(--primary-color);
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 2rem;
+      margin-bottom: 4rem;
+      display: inline-block;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: -.5rem;
+        border-bottom: 1px solid var(--primary-color);
+      }
+    }
+    .title {
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      span {
+        color: var(--primary-color);
+        font-weight: 600;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        width: 30%;
+        left: 50%;
+        bottom: -.5rem;
+        transform: translateX(-50%);
+        border-bottom: 1px solid var(--primary-color);
+      }   
+    }
+    .title-list {
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      .topic {
+        padding: 0.5rem 1.3rem;
+        border-radius: 0 12px;
+        background-color: var(--primary-color);
+        color: #FFF!important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      span {
+        padding: 0 1rem;
+        border-bottom: 2px solid var(--primary-color);
+        text-transform: uppercase;
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding: 0;
+      li {
+        display: flex;
+        gap: 1rem;
+        .descricao {
+          margin-bottom: 3rem;
+          padding-top: 5rem;
+          .title-tutorial-item {
             color: var(--primary-color);
-            font-weight: 500;
+            border-bottom: 2px solid var(--primary-color);
+            padding: 0 3rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+            background: url(/img/arrow-forward.svg) center right no-repeat;
+            background-size: 10%;
+          }
+          p {
+            font-size: 1.3rem;
+            span {
+              color: var(--primary-color);
+              font-weight: 500;
+            }
           }
         }
+        .thumb {
+
+        }
+        &:nth-of-type(1) {
+          width: 45%;
+          .descricao {
+            width: 65%;
+          }
+          .thumb {
+            img {
+              width: 100%
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          width: 30%;
+          flex-direction: column;
+        }
+      }
+    }
+    .linha {
+      p {
+        font-size: 1.3rem;
+        span {
+          color: var(--primary-color);
+          font-weight: 500;
+        }
+      }
+      + a {
+        background: var(--primary-color);
+        border-radius: 0 12px;
+        color: #fff;
+        display: flex;
+        font-size: 1.2rem;
+        justify-content: center;
+        padding: 1rem;
+        text-transform: uppercase;
+        max-width: 40rem;
+        margin-top: 2rem;
       }
     }
   }
@@ -5006,6 +5110,43 @@ footer {
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Tutorial Page
+  article[class="page page--pages/tutorial"] {
+    padding-top: 4.5rem;
+    #tutorial {
+      .alert {
+        font-size: 1.6rem!important;
+      }
+      .title {
+        font-size: 1.6rem;
+        &:before {
+          width: 100%;
+        }
+      }
+      ul {
+        flex-direction: column;
+        margin-bottom: 4rem;
+        li {
+          width: 100%!important;
+          flex-direction: column;
+          .descricao {
+            width: 100%!important;
+            padding: 0;
+          }
+          .thumb {
+            width: auto!important;
+            display: flex;
+            justify-content: center;
+            img {
+              max-width: none!important;
+              width: auto!important;
             }
           }
         }
