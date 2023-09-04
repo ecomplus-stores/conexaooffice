@@ -165,9 +165,9 @@
     {
       "type": "responsive-banner",
       "identificador": "full-banner-home",
-      "img": "/img/uploads/single2.webp",
+      "img": "/img/uploads/rodapedesk.png",
       "link": "https://link.com.br",
-      "mobile_img": "/img/uploads/single2m.webp",
+      "mobile_img": "/img/uploads/rodape.png",
       "alt": "Conheça nossas lojas"
     }
   ]
