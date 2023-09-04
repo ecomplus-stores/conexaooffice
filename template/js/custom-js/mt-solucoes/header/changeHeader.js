@@ -1,3 +1,4 @@
+import { createElement } from "../utils/createElementHTML";
 import { resetStateButtonMiniMenu } from "./buttonMenuMiniMenu";
 
 const header = document.querySelector('header');
@@ -15,8 +16,13 @@ const setMiniMenu = () => {
   header.classList.add('mini-header');
   document.querySelector('#favorite-button').addEventListener('click', e => {
     e.preventDefault();
-    mainMenu.setAttribute('id','show-main-menu')
   })
+  const btnCloseMainMenu = createElement('div', 'btn-close-mini-main-menu');
+  btnCloseMainMenu.textContent = 'X';
+  btnCloseMainMenu.addEventListener('click', (e)=>{
+    e.target.parentElement.classList.remove('show-main-mini-menu')
+  })
+  document.querySelector('.btn-close-mini-main-menu') ? null : document.querySelector('.main-menu').prepend(btnCloseMainMenu);
 }
 
 export const changeHeader = () => {

@@ -11,9 +11,7 @@ export const resetStateButtonMiniMenu = () => {
 // Toggle class to change icon on click and add class to show main menu on mini menu
 export const buttonMainMenu = () => {
   button.addEventListener('click', (e)=> {
-    e.target.classList.toggle('i-times');
-    e.target.classList.toggle('i-bars');
-    e.target.classList[1] == 'i-times' ? mainMenu.classList.add('show-main-mini-menu') : mainMenu.classList.remove('show-main-mini-menu')
+    mainMenu.classList.add('show-main-mini-menu')
   });
 
 }
