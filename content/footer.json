@@ -56,7 +56,7 @@
     "list_categories": false
   },
   "contacts": {
-    "title": "Dúvidas? Fale conosco",
+    "title": "Contatos",
     "phone_wpp": true,
     "socials": true,
     "email": true,
@@ -83,6 +83,7 @@
     "citibank": false,
     "diners": true,
     "mais": false,
+    "pix": true,
     "amex": true,
     "itau": false
   },
