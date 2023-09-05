@@ -5,11 +5,11 @@
   },
   "links_1": {
     "list_pages": false,
-    "title": "Informações úteis",
+    "title": "Institucional",
     "list": [
       {
-        "text": "Nossas Lojas",
-        "url": "https://mtsolucoestest.netlify.app/pages/nossas-lojas"
+        "text": "Nossa Loja",
+        "url": "https://conexaooffice.netlify.app//pages/nossas-lojas"
       },
       {
         "text": "Formas de Pagamento",
@@ -50,27 +50,7 @@
     "list": [
       {
         "text": "Loja Santa Cecília - SP Móveis @ AV. São João, 1915/1907, Santa Cecília",
-        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
-      },
-      {
-        "text": "Loja Santa Cecília - SP Decor @ AV. São João, 1915/1907, Santa Cecília",
-        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
-      },
-      {
-        "text": "Loja Arouche - Centro SP  @ AV. São João, 1915/1907, Santa Cecília",
-        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
-      },
-      {
-        "text": "Loja São José dos Campos - Jardim América @ AV. São João, 1915/1907, Santa Cecília",
-        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
-      },
-      {
-        "text": "Loja São José dos Campos - SP -Decor @ AV. São João, 1915/1907, Santa Cecília",
-        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
-      },
-      {
-        "text": "Loja Campinas - Jardim Santana @ AV. São João, 1915/1907, Santa Cecília",
-        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
+        "url": "https://conexaooffice.netlify.app//pages/nossas-lojas"
       }
     ],
     "list_categories": false
