@@ -6,9 +6,7 @@
     "color": "#1F366A"
   },
   "contacts_stripe": {
-    "pages": [
-      {}
-    ],
+    "pages": [],
     "phone_wpp": true,
     "socials": true
   },
