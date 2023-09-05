@@ -14,13 +14,13 @@
   },
   "categories_list": {
     "featured": [
-      "/ambientes?Ambientes",
-      "/cadeiras?Cadeiras",
-      "/produtos/armarios?Armários",
-      "/produtos/auditorio?Auditório",
+      "/produtos?Todos os Produtos",
+      "/produtos/divisor-de-ambientes?Divisor de Ambiente",
+      "/produtos/home-e-office?Home & Office",
+      "/produtos/telemarketing-e-callcenter?Telemarketing e Callcenter",
       "/produtos/cadeiras?Cadeiras",
-      "/produtos/lousas?Lousas",
-      "/produtos/refeitorio?Refeitório"
+      "/produtos/armarios?Armários",
+      "/estantes?Estantes"
     ],
     "random": 0,
     "full_width": true
