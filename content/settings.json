@@ -1,5 +1,5 @@
 {
-  "domain": "conexaohome.com.br",
+  "domain": "https://conexaooffice.netlify.app",
   "currency_symbol": "R$",
   "primary_color": "#000000",
   "theme": {
@@ -9,18 +9,18 @@
   "bg_color": "#ffffff",
   "repository": "ecomplus-stores/conexaooffice",
   "logo": "/img/uploads/logooffice.png",
-  "name": "conexaohome",
+  "name": "Conexão Office",
   "short_name": "Sobre Nós",
   "lang": "pt_br",
   "currency": "BRL",
   "mini_logo": "",
   "font_family": "_",
-  "favicon": "/img/uploads/favicon.png",
+  "favicon": "/img/uploads/favicon-icone.png",
   "icons_font": "_",
   "country_code": "BR",
   "secondary_color": "#1F366A",
-  "icon": "/img/uploads/logotipo-home-png-site.png",
+  "icon": "/img/uploads/favicon.png",
   "store_id": 51317,
-  "description": "Nada como estar em um ambiente bonito, agradável e organizado. Essa é a proposta da Conexão Home, que há mais de 20 anos fornece móveis para decorações de milhares de lares.",
-  "large_icon": "/img/uploads/logotipo-home-png-site.png"
+  "description": "Nada como trabalhar em um ambiente bonito, agradável, organizado, capaz de ampliar a produtividade dos seus colaboradores. Essa é a proposta da Conexão Office, que há mais de 20 anos fornece móveis para escritórios e uso profissional. Sempre em sintonia com as principais tendências do mobiliário, a Conexão Office atende às necessidades de empresas de vários portes, desde home offices até corporações com vários postos de trabalho. ",
+  "large_icon": "/img/uploads/favicon.png"
 }
