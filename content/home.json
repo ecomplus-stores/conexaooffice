@@ -105,26 +105,6 @@
       ]
     },
     {
-<<<<<<< HEAD
-=======
-      "type": "responsive-banner",
-      "identificador": "full-banner-home",
-      "img": "/img/uploads/mosaicosdesk_4.png",
-      "link": "https:bannersingle.com.br",
-      "mobile_img": "/img/uploads/mosaicos_4.png"
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 8,
-      "page": 1,
-      "collection_id": "632db83d73321213f889bde6:categories:Cadeiras:/cadeiras",
-      "title": "Cadeiras",
-      "headless": false,
-      "sort": "highest_price"
-    },
-    {
->>>>>>> 38c00ee772c3f0a0e3728037375da6ebc40c59d5
       "type": "responsive-banner",
       "identificador": "full-banner-home",
       "img": "/img/uploads/rodapedesk.png",
