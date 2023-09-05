@@ -8,12 +8,12 @@
     "title": "Institucional",
     "list": [
       {
-        "text": "Nossa Loja",
-        "url": "https://conexaooffice.netlify.app/pages/nossas-lojas"
+        "text": "Sobre Nós",
+        "url": "https://conexaooffice.netlify.app/pages/sobre-nos"
       },
       {
-        "text": "Formas de Pagamento",
-        "url": "https://conexaooffice.netlify.app/pages/pagamentos"
+        "text": "Nossa Loja",
+        "url": "https://conexaooffice.netlify.app/pages/nossas-lojas"
       },
       {
         "text": "Política de Privacidade",
@@ -28,16 +28,16 @@
         "url": "https://conexaooffice.netlify.app/pages/politicas-de-entrega"
       },
       {
-        "text": "Sobre Nós",
-        "url": "https://conexaooffice.netlify.app/pages/sobre-nos"
-      },
-      {
-        "text": "Locação de Móveis",
-        "url": "https://marketing.conexaohomeblog.com.br/locacao-de-moveis"
+        "text": "Formas de Pagamento",
+        "url": "https://conexaooffice.netlify.app/pages/pagamentos"
       },
       {
         "text": "Aluguel de Móveis",
         "url": "https://conexaooffice.netlify.app/pages/aluguel-de-moveis"
+      },
+      {
+        "text": "Locação de Móveis",
+        "url": "https://marketing.conexaohomeblog.com.br/locacao-de-moveis"
       },
       {
         "text": "Pague com Cartão BNDES",
