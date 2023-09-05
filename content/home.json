@@ -121,7 +121,7 @@
       "type": "responsive-banner",
       "identificador": "full-banner-home",
       "img": "/img/uploads/rodapedesk.png",
-      "link": "https://conexaohome.netlify.app/pages/nossas-lojas",
+      "link": "https://conexaooffice.netlify.app/pages/nossas-lojas",
       "mobile_img": "/img/uploads/rodape.png",
       "alt": "Conheça nossas lojas"
     }
