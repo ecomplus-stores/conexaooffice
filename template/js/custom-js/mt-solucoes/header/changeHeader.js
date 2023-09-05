@@ -24,7 +24,6 @@ const setMiniMenu = () => {
   })
   document.querySelector('.btn-close-mini-main-menu') ? null : document.querySelector('.main-menu').prepend(btnCloseMainMenu);
 }
-
 export const changeHeader = () => {
   window.document.addEventListener('scroll', ()=> {
     setTimeout(() => {
