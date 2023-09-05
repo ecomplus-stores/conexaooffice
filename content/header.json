@@ -1,7 +1,7 @@
 {
   "marketing_stripe": {
-    "text": "BAZAR ONLINE! Clique e confira.",
-    "link": "https://conexaohome.com.br/bazar-de-moveis-decoracao-utensilios-para-cozinha",
+    "text": "",
+    "link": "",
     "background": "#d9d9d9",
     "color": "#1F366A"
   },
@@ -12,13 +12,13 @@
   },
   "categories_list": {
     "featured": [
-      "/ambientes?Ambientes",
-      "/cadeiras?Cadeiras",
-      "/produtos/armarios?Armários",
-      "/produtos/auditorio?Auditório",
+      "/produtos?Todos os Produtos",
+      "/arquivos-e-ficharios?Arquivos e Fichários",
+      "/lockers?Lockers",
+      "/produtos/mesas?Mesas",
       "/produtos/cadeiras?Cadeiras",
-      "/produtos/lousas?Lousas",
-      "/produtos/refeitorio?Refeitório"
+      "/produtos/armarios?Armários",
+      "/estantes?Estantes"
     ],
     "random": 0,
     "full_width": true

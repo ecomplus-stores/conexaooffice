@@ -4,44 +4,48 @@
     "text": ""
   },
   "links_1": {
-    "list_pages": false,
-    "title": "Informações úteis",
+    "list_pages": true,
+    "title": "Institucional",
     "list": [
       {
-        "text": "Nossas Lojas",
-        "url": "https://mtsolucoestest.netlify.app/pages/nossas-lojas"
+        "text": "Sobre Nós",
+        "url": "https://conexaooffice.netlify.app/pages/sobre-nos"
       },
       {
-        "text": "Formas de Pagamento",
-        "url": "https://mtsolucoestest.netlify.app/pages/pagamentos"
+        "text": "Nossa Loja",
+        "url": "https://conexaooffice.netlify.app/pages/nossas-lojas"
       },
       {
         "text": "Política de Privacidade",
-        "url": "https://mtsolucoestest.netlify.app/pages/politica-de-privacidade"
+        "url": "https://conexaooffice.netlify.app/pages/politica-de-privacidade"
       },
       {
         "text": "Trocas e Devoluções",
-        "url": "https://mtsolucoestest.netlify.app/pages/politica-de-trocas-e-devolucoes"
+        "url": "https://conexaooffice.netlify.app/pages/politica-de-trocas-e-devolucoes"
       },
       {
         "text": "Política de Entregas e Envios",
-        "url": "https://mtsolucoestest.netlify.app/pages/politicas-de-entrega"
+        "url": "https://conexaooffice.netlify.app/pages/politicas-de-entrega"
       },
       {
-        "text": "Sobre Nós",
-        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
-      },
-      {
-        "text": "Locação de Móveis",
-        "url": "https://marketing.conexaohomeblog.com.br/locacao-de-moveis"
+        "text": "Formas de Pagamento",
+        "url": "https://conexaooffice.netlify.app/pages/pagamentos"
       },
       {
         "text": "Aluguel de Móveis",
         "url": "https://conexaooffice.netlify.app/pages/aluguel-de-moveis"
       },
       {
+        "text": "Locação de Móveis",
+        "url": "https://marketing.conexaohomeblog.com.br/locacao-de-moveis"
+      },
+      {
         "text": "Pague com Cartão BNDES",
         "url": "https://conexaooffice.netlify.app/pages/pague-com-cartao-bndes"
+      },
+      {
+        "text": "Arquitetos e Designers",
+        "url": "https://conexaooffice.netlify.app/pages/arquiteto-e-designers"
       }
     ]
   },
@@ -49,34 +53,14 @@
     "title": "Nossas Lojas",
     "list": [
       {
-        "text": "Loja Santa Cecília - SP Móveis @ AV. São João, 1915/1907, Santa Cecília",
-        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
-      },
-      {
-        "text": "Loja Santa Cecília - SP Decor @ AV. São João, 1915/1907, Santa Cecília",
-        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
-      },
-      {
-        "text": "Loja Arouche - Centro SP  @ AV. São João, 1915/1907, Santa Cecília",
-        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
-      },
-      {
-        "text": "Loja São José dos Campos - Jardim América @ AV. São João, 1915/1907, Santa Cecília",
-        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
-      },
-      {
-        "text": "Loja São José dos Campos - SP -Decor @ AV. São João, 1915/1907, Santa Cecília",
-        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
-      },
-      {
-        "text": "Loja Campinas - Jardim Santana @ AV. São João, 1915/1907, Santa Cecília",
-        "url": "https://mtsolucoestest.netlify.app/pages/sobre-nos"
+        "text": "Loja Santa Cecília @ Av. São João, 1895 - Santa Cecilia, São Paulo - SP, 01211-100",
+        "url": "https://conexaooffice.netlify.app/pages/nossas-lojas"
       }
     ],
     "list_categories": false
   },
   "contacts": {
-    "title": "Dúvidas? Fale conosco",
+    "title": "Contatos",
     "phone_wpp": true,
     "socials": true,
     "email": true,
@@ -103,6 +87,7 @@
     "citibank": false,
     "diners": true,
     "mais": false,
+    "pix": true,
     "amex": true,
     "itau": false
   },
