@@ -24,5 +24,9 @@ export const initProductPage = () => {
   // TEMP
   const buttonBudgetProductPage = createElement('div', 'button-budget');
   buttonBudgetProductPage.textContent = 'Orçar este produto';
-  document.querySelector('.product__buy').after(buttonBudgetProductPage)
+  document.querySelector('.product__buy').after(buttonBudgetProductPage);
+  buttonBudgetProductPage.addEventListener('click', ()=> {
+    document.querySelector('.product__buy button').click();
+    console.log('click')
+  })
 }
