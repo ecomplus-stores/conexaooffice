@@ -120,6 +120,7 @@ select {
     background: #F8F8F8 !important;
     border-radius: 0;
     border: 1px solid var(--primary-color);
+    z-index: 9999;
     .card-header {
       position: relative;
       width: 100%;
@@ -153,6 +154,7 @@ select {
           .cart-item__container {
             .cart-item__thumb {
               border: 1px solid var(--grey-70);
+              margin-right: 1.5rem;
             }
             .cart-item__data {
               .close {
@@ -161,7 +163,7 @@ select {
                 width: 12px;
                 background-size: contain;
                 color: var(--grey-70);
-                top: 5px;
+                top: 0;
                 position: relative;
                 i {
                   &::before {
@@ -170,15 +172,18 @@ select {
                 }
               }
               .cart-item__name {
-                font-size: 1.6rem;
+                font-size: 1.3rem;
                 margin-bottom: 1rem;
                 a {
-                  color: var(--grey-70) !important;
+                  color: var(--black) !important;
                 }
               }
               .cart-item__quantity {
                 width: 50px;
-                float: right;
+                position: absolute;
+                right: 0;
+                margin: 0;
+                bottom: -2.3rem;
                 select {
                   color: var(--primary-color);
                 }
@@ -284,9 +289,26 @@ select {
         box-shadow: 0px 3px 6px #00000029;
         border-radius: 0px!important;
         border: 1px solid var(--gold);
+        margin-bottom: .7rem;
         i {
           display: none;
         }
+      }
+      .button-budget-minicart {
+        height: 4.2rem;
+        color: var(--primary-color);
+        font-weight: 400;
+        font-size: 1.4rem;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent !important;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 0px!important;
+        border: 1px solid var(--primary-color);
+        cursor: pointer;
+        font-weight: 500;
       }
     }
   }
@@ -908,8 +930,41 @@ header[class~="mini-header"] {
       align-items: flex-start;
       justify-content: center;
       flex-direction: column;
+      .show-mini-submenu {
+        display: block!important;
+      }
       > div {
         width: 100%;
+        &:first-of-type {
+          > a.opened-submenu {
+            &::after {
+              content: "-";
+            }
+          }
+          > a {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            &::after {
+              content: "+";
+              background-color: var(--primary-color);
+              padding: 0 .8rem;
+              color: #FFF;
+            }
+          }
+          > nav {
+            position: relative;
+            width: 100%;
+            min-width: auto;
+            top: 0px;
+            border: 0;
+            padding: 0;
+            box-shadow: none;
+            background-color: transparent;
+            flex-direction: column;
+          }
+        }
         > a {
           color: var(--black);
           font-size: 1.4rem;
@@ -1163,7 +1218,7 @@ header[class~="mini-header"] {
               height: 5rem;
               border: 1px solid var(--primary-color);
               padding: 1rem;
-              border-radius: 1rem;
+              border-radius: 1.5rem;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -1261,6 +1316,11 @@ header[class~="mini-header"] {
   }
 }
 .product-card {
+  &:hover {
+    .button-orcar {
+      opacity: 1;
+    }
+  }
   .product-card__offer-stamp {
     border-radius: 0px 12px !important;
     font-size: 1.3rem;
@@ -1317,6 +1377,8 @@ header[class~="mini-header"] {
   .product-card__buy {
     margin-bottom: 1rem;
     margin-top: 3rem;
+    display: block!important;
+    opacity: 1!important;
     button.btn-primary {
       border: 0 !important;
       background: var(--primary-color);
@@ -1327,10 +1389,28 @@ header[class~="mini-header"] {
       padding: 1rem;
       font-size: 1.4rem;
       text-transform: uppercase;
+      opacity: 1!important;
       i {
         display: none;
       }
     }
+  }
+  .button-orcar {
+    border: 1px solid var(--primary-color) !important;
+    border-radius: 0px 12px;
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 1.2rem;
+    opacity: 1!important;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.4rem;
   }
   #pronta-entrega {
     position: absolute;
@@ -2164,6 +2244,22 @@ header[class~="mini-header"] {
                         }
                       }
                     }
+                  }
+                  .button-budget {
+                    background-color: transparent;
+                    border-radius: 0px 12px;
+                    border: 1px solid var(--primary-color);
+                    color: var(--primary-color);
+                    font-weight: 500;
+                    width: 43rem;
+                    height: 4.2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-transform: uppercase;
+                    font-size: 1.6rem;
+                    margin-bottom: 2rem;
+                    cursor: pointer;
                   }
                   .product__payment {
                     // display: none;
@@ -2999,6 +3095,9 @@ footer.foo {
               .cart__summary-row {
                 font-size: 1.5rem;
                 font-weight: 400;
+                &:nth-of-type(1) {
+                  display: none;
+                }
                 > span {
                   color: var(--black);
                 }
@@ -3122,6 +3221,27 @@ footer.foo {
                 &:hover {
                   background: var(--primary-color);
                   color: var(--white);
+                }
+              }
+              .discount-applier__form {
+                .form-group {
+                  label {
+                    color: var(--primary-color);
+                    font-size: 1.3rem;
+                  }
+                  .input-group {
+                    gap: 1rem!important;
+                    > input {
+                      border-radius: .5rem;
+                      font-size: 1.3rem;
+                    }
+                    button {
+                      font-size: 1.3rem;
+                      border-radius: .5rem;
+                      background-color: var(--primary-color);
+                      color: #FFF;
+                    }
+                  }
                 }
               }
             }
@@ -4846,6 +4966,9 @@ article[class="page page--pages/tutorial"] {
                       background: transparent;
                     }
                   }
+                }
+                .button-budget {
+                  width: 100%;
                 }
                 .product__payment {
                   width: 100%;

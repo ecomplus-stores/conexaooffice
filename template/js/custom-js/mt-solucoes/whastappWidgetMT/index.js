@@ -5,10 +5,10 @@ export const initWidgetWhatsAppMT = () => {
 
     const people = [
         {
-            name: 'Conexão Home',
-            phone: '11 32940706',
-            link: '1132940706',
-            image: '/img/uploads/logotipo-home-png-site.png'
+            name: 'Conexão Office',
+            phone: '11 987260860',
+            link: '11987260860',
+            image: '/img/uploads/logooffice.png'
         }
     ];
 
