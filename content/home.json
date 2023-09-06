@@ -41,25 +41,25 @@
       "identificador": "content-banner-tarja",
       "banners": [
         {
-          "img": "/img/icons-tarja/pin.svg",
+          "img": "/img/icons-tarja/percent.svg",
           "link": "#",
           "mobile_img": "",
           "alt": "PARCELE SUAS COMPRAS! EM ATÉ 10X SEM JUROS"
         },
         {
-          "img": "/img/icons-tarja/juros.svg",
+          "img": "/img/icons-tarja/frete.svg",
           "link": "#",
           "mobile_img": "",
           "alt": "RECEBA EM CASA! ENTREGAMOS PARA TODO O BRASIL"
         },
         {
-          "img": "/img/icons-tarja/frete.svg",
+          "img": "/img/icons-tarja/cartao.svg",
           "link": "#",
           "mobile_img": "",
           "alt": "COMPRE COM CARTÃO BNDES! CONSULTE CONDIÇÕES"
         },
         {
-          "img": "/img/icons-tarja/whatsapp.svg",
+          "img": "/img/icons-tarja/contato.svg",
           "link": "#",
           "mobile_img": "",
           "alt": "SOLICITE SEU PROJETO! FALE COM UM DE NOSSOS VENDEDORES"

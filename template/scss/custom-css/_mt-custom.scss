@@ -1159,6 +1159,17 @@ header[class~="mini-header"] {
             cursor: default;
             picture {
               margin-bottom: 1rem;
+              width: 5rem;
+              height: 5rem;
+              border: 1px solid var(--primary-color);
+              padding: 1rem;
+              border-radius: 1rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                width: 80%;
+              }
             }
             > p {
               font-size: 1.4rem;
