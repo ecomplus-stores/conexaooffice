@@ -150,7 +150,7 @@ select {
       .minicart__list {
         .cart-item {
           border-bottom: 1px solid var(--grey-c8);
-          padding: 0 0 1rem 0;
+          padding: 0 0 2rem 0;
           .cart-item__container {
             .cart-item__thumb {
               border: 1px solid var(--grey-70);
@@ -480,7 +480,7 @@ div[data-mbz-button-popup-wrapper] {
       }
     }
   }
-
+  
   .main-menu {
     .btn-close-mini-main-menu {
       display: none;
@@ -489,6 +489,28 @@ div[data-mbz-button-popup-wrapper] {
       display: flex;
       align-items: center;
       justify-content: center;
+      .btn-all-products {
+        font-size: 1.267rem;
+        color: var(--grey-70)!important;
+        text-transform: none;
+        font-weight: 500;
+        padding: 0.5rem 3rem;
+        border-radius: 1.2rem 0px;
+        cursor: pointer;
+        text-decoration: none!important;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: transparent!important;
+        &::before {
+          content: '';
+          width: 20px;
+          height: 20px;
+          display: block;
+          background: url(/img/menu-all.svg) center center no-repeat;
+          background-size: contain;
+        }
+      }
       > div {
         > a {
           font-size: 1.267rem;
@@ -500,6 +522,14 @@ div[data-mbz-button-popup-wrapper] {
           &:hover {
             background-color: var(--primary-color);
             color: var(--white);
+          }
+        }
+        .show-submenu-main {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          > div {
+            width: 20%;
           }
         }
         .header__submenu {
@@ -545,9 +575,7 @@ div[data-mbz-button-popup-wrapper] {
                 top: 40% !important;
               }
             }
-            .show-submenu-main {
-              display: block !important;
-            }
+            
             .main-submenu {
               position: absolute;
               top: 25px;
@@ -925,6 +953,12 @@ header[class~="mini-header"] {
       font-weight: 600;
       display: block!important;
     }
+    .show-submenu-main {
+      display: block!important;
+      > div {
+        width: 100%!important;
+      }
+    }
     nav.header__nav {
       display: flex;
       align-items: flex-start;
@@ -932,6 +966,17 @@ header[class~="mini-header"] {
       flex-direction: column;
       .show-mini-submenu {
         display: block!important;
+      }
+      .btn-all-products {
+        padding: 0!important;
+        color: var(--black)!important;
+        font-size: 1.4rem;
+        display: block;
+        border: 0;
+        text-align: left;
+        &::before {
+          display: none!important;
+        }
       }
       > div {
         width: 100%;
@@ -4443,7 +4488,9 @@ article[class="page page--pages/tutorial"] {
           justify-content: flex-end;
           width: 100%;
           border-bottom: 1px solid rgba($color: #000000, $alpha: 0.3);
-
+          > a[class="btn-all-products"] {
+            padding: 0!important;
+          }
           > a {
             margin-right: 1rem;
             display: flex;
@@ -4481,6 +4528,7 @@ article[class="page page--pages/tutorial"] {
               transform: translate(-50%, -50%);
             }
           }
+          
           .show-submenu-main {
             display: block !important;
           }
