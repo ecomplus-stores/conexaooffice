@@ -5,6 +5,9 @@ function createButton () {
   const buttonBudget = document.createElement('div');
   buttonBudget.classList.add('button-orcar');
   buttonBudget.textContent = 'Orçar';
+  buttonBudget.addEventListener('click', (e)=> {
+    e.target.previousElementSibling.click();
+  })
   document.querySelectorAll('.product-card section .product-card__buy').forEach(element => {
     element.nextElementSibling.nodeName === 'A' ? element.after(buttonBudget) : null;
   })

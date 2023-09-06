@@ -155,6 +155,18 @@ select {
             .cart-item__thumb {
               border: 1px solid var(--grey-70);
               margin-right: 1.5rem;
+              width: 88px;
+              height: 88px;
+              display: flex;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #FFF!important;
+              overflow: hidden;
+              img {
+                height: 80px;
+              }
             }
             .cart-item__data {
               .close {
@@ -176,6 +188,11 @@ select {
                 margin-bottom: 1rem;
                 a {
                   color: var(--black) !important;
+                  text-overflow:unset!important ;
+                  display: block!important;
+                  -webkit-line-clamp: none!important; /* number of lines to show */
+                  line-clamp: none!important;
+                  -webkit-box-orient: vertical;
                 }
               }
               .cart-item__quantity {
@@ -1606,7 +1623,7 @@ header[class~="mini-header"] {
       .title-page {
         color: #000;
         padding: 0 1rem;
-        border-bottom: 2px solid var(--gold);
+        border-bottom: 2px solid var(--primary-color);
       }
     }
     .category-banner {
@@ -2473,7 +2490,7 @@ header[class~="mini-header"] {
     }
     span {
       @extend .title-page;
-      border-bottom: 2px solid var(--gold);
+      border-bottom: 2px solid var(--primary-color);
     }
   }
 }
@@ -3032,7 +3049,7 @@ footer.foo {
     > h1 {
       @extend .title-page;
       color: #000 !important;
-      border-bottom: 2px solid var(--gold);
+      border-bottom: 2px solid var(--primary-color);
       display: table;
       padding: 0 1rem;
       margin: 0 auto;
@@ -3105,7 +3122,7 @@ footer.foo {
                   @extend .title-page;
                   display: inline-block;
                   padding: 0 1rem;
-                  border-bottom: 2px solid var(--gold);
+                  border-bottom: 2px solid var(--primary-color);
                   margin-bottom: 2rem;
                 }
               }
