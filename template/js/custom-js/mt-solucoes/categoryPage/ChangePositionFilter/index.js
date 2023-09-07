@@ -23,6 +23,11 @@ function changeContentFilter () {
   document.querySelector('.search-engine__toggles header .close').addEventListener('click', (e)=> {
     document.querySelector('.search-engine__toggles aside').setAttribute('style', 'display: none')
   })
+
+  // Add event to shot button hidden content filter
+  document.querySelector('.search-engine__nav .dropdown button').addEventListener('click', (e)=> {
+    e.target.parentElement.nextElementSibling.setAttribute('style', 'display: none;')
+})
 }
 
 

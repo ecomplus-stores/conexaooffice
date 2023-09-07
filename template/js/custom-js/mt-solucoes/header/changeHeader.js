@@ -21,6 +21,7 @@ const setMainMenu = () => {
 }
 
 const setMiniMenu = () => {
+  document.querySelector('.header__submenu').classList.remove('show-submenu-main"')
   header.classList.add('mini-header');
   document.querySelector('#favorite-button').addEventListener('click', e => {
     e.preventDefault();
@@ -34,7 +35,7 @@ const setMiniMenu = () => {
   document.querySelector('.btn-close-mini-main-menu') ? null : document.querySelector('.main-menu').prepend(btnCloseMainMenu);
 
   // Custom button TODOS OS PRODUTOS
-  const buttonAllProducts = document.querySelector('.mini-header .header__nav div > div');
+  const buttonAllProducts = document.querySelector('.mini-header .header__nav div > a');
   buttonAllProducts.addEventListener('click', (e)=> {
     e.preventDefault();
     e.target.classList.toggle('opened-submenu')
@@ -44,7 +45,7 @@ export const changeHeader = () => {
   window.document.addEventListener('scroll', ()=> {
     setTimeout(() => {
       window.scrollY > 0 ?  setMiniMenu() : setMainMenu(); 
-    }, 100);
+    }, 0);
   })
 }
 

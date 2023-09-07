@@ -114,6 +114,10 @@ select {
   max-width: var(--max-width-full);
 }
 
+#main {
+  position: relative;
+  top: 21rem;
+}
 // MINI CART
 #cart-quickview {
   .minicart__aside {
@@ -188,11 +192,7 @@ select {
                 margin-bottom: 1rem;
                 a {
                   color: var(--black) !important;
-                  text-overflow:unset!important ;
                   display: block!important;
-                  -webkit-line-clamp: none!important; /* number of lines to show */
-                  line-clamp: none!important;
-                  -webkit-box-orient: vertical;
                 }
               }
               .cart-item__quantity {
@@ -342,7 +342,8 @@ div[data-mbz-button-popup-wrapper] {
 }
 // HEADER
 .header {
-  padding: 2rem 0;
+  position: fixed;
+  padding: 4rem 0;
   transition: all 0.5s ease;
   border: 0;
   background-color: #fff;
@@ -434,8 +435,8 @@ div[data-mbz-button-popup-wrapper] {
           left: 50%;
           transform: translate(-50%, -50%);
           img {
-            width: 169px;
-            max-width: 169px;
+            width: 249px;
+            max-width: 249px;
             max-height: none!important
           }
           &:last-of-type {
@@ -550,9 +551,11 @@ div[data-mbz-button-popup-wrapper] {
           }
         }
         .header__submenu {
-          left: 0;
-          width: 100%;
-          max-width: 100%;
+          width: var(--max-width-full);
+          max-width: none!important;
+          left: 50%;
+          transform: translateX(-50%);
+          margin-top: 4rem;
           max-height: 60vh;
           overflow-y: auto;
           > div {
@@ -976,6 +979,7 @@ header[class~="mini-header"] {
         width: 100%!important;
       }
     }
+    
     nav.header__nav {
       display: flex;
       align-items: flex-start;
@@ -998,6 +1002,9 @@ header[class~="mini-header"] {
       > div {
         width: 100%;
         &:first-of-type {
+          .header__submenu {
+            margin-top: 1rem!important;
+          }
           > a.opened-submenu {
             &::after {
               content: "-";
@@ -1038,9 +1045,6 @@ header[class~="mini-header"] {
             color: var(--primary-color);
             background-color:transparent;
           }
-        }
-        .header__submenu {
-          top: 2.6rem;
         }
       }
     }
@@ -1401,9 +1405,10 @@ header[class~="mini-header"] {
     text-decoration: none !important;
 
     .product-card__name {
-      font-size: 1.4rem;
-      line-height: 1.4rem;
-      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      margin-bottom: 2rem;
+      color: var(--black);
     }
     
   }
@@ -1494,7 +1499,8 @@ header[class~="mini-header"] {
       margin-bottom: 0.5rem;
     }
     .prices__value {
-      font-size: 1.4rem;
+      font-size: 1.6rem!important;
+      color: var(--black);
       margin-bottom: 1.6rem;
     }
     .prices__discount {
@@ -1502,21 +1508,24 @@ header[class~="mini-header"] {
     }
     > span {
       .prices__installments {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: 500;
         span {
           font-weight: 800;
+          color: var(--black);
         }
       }
       .prices__discount {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: 500;
         span {
           font-weight: 800;
+          color: var(--black);
         }
         .prices__discount-label {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           font-weight: 500;
+          color: var(--black);
         }
       }
     }
@@ -1834,6 +1843,7 @@ header[class~="mini-header"] {
                     margin-right: 1rem;
                     border: 0;
                     border-radius: 0;
+                    text-transform: uppercase;
                   }
                   > .dropdown {
                     background: #FFF!important;
@@ -1858,11 +1868,14 @@ header[class~="mini-header"] {
                       align-items: center;
                       flex-direction: row-reverse;
                       gap: 1rem;
+                      text-transform: uppercase;
                     }
                     .dropdown-menu {
+                      top: 2rem!important;
+                      border: 1px solid var(--primary-color);
                       a {
-                        color: var(--primary-color);
-                        font-size: 1.2rem;
+                        color: var(--black);
+                        font-size: 1.3rem;
                       }
                     }
                   }
@@ -1903,6 +1916,7 @@ header[class~="mini-header"] {
                           color: #000;
                         }
                         .search-engine__option {
+                          color: var(--black)!important;
                           label {
                             &::before {
                               border-radius: 0;
@@ -2490,7 +2504,7 @@ header[class~="mini-header"] {
     }
     span {
       @extend .title-page;
-      border-bottom: 2px solid var(--primary-color);
+      border-bottom: none;
     }
   }
 }
@@ -4296,6 +4310,10 @@ article[class="page page--pages/tutorial"] {
 }
 
 @media (max-width: 768px) {
+  #main {
+    position: relative;
+    top: 12rem;
+  }
   #fmais-loyalty__bottom__open__btn {
     top: 27% !important;
   }
@@ -4507,6 +4525,9 @@ article[class="page page--pages/tutorial"] {
           border-bottom: 1px solid rgba($color: #000000, $alpha: 0.3);
           > a[class="btn-all-products"] {
             padding: 0!important;
+            &::before {
+              display: none!important;
+            }
           }
           > a {
             margin-right: 1rem;
@@ -4550,6 +4571,7 @@ article[class="page page--pages/tutorial"] {
             display: block !important;
           }
           .header__submenu {
+            width: 100%!important;
             z-index: 9997;
             position: relative;
             display: none;
@@ -4559,6 +4581,7 @@ article[class="page page--pages/tutorial"] {
             margin-top: 0;
             padding: 1rem 0 2rem 0;
             > div {
+              width: 100%!important;
               > a {
                 text-transform: none;
                 font-size: 1.3rem !important;
@@ -4593,12 +4616,12 @@ article[class="page page--pages/tutorial"] {
     margin-bottom: 4rem;
     .products-carousel {
       .glide__arrow--right {
-        top: 37% !important;
+        top: 27% !important;
         right: 0;
         padding: 0;
       }
       .glide__arrow--left {
-        top: 37% !important;
+        top: 27% !important;
         left: 0;
         padding: 0;
       }
