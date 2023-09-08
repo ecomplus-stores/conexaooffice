@@ -32,7 +32,10 @@ window.addEventListener("load", (event) => {
   window.matchMedia("(max-width: 768px)").matches ? initMobile() : null;
 
   const buttonBudgetMiniCart = createElement('div', 'button-budget-minicart')
-  buttonBudgetMiniCart.textContent = 'Orçar todos os produtos do carrinho'
+  buttonBudgetMiniCart.textContent = 'Orçar todos os produtos do carrinho';
+  buttonBudgetMiniCart.addEventListener('click', ()=> {
+    window.location = `${window.origin}/orcamento`
+  })
   document.querySelector('.minicart__aside .card-footer').appendChild(buttonBudgetMiniCart)
 });
 
