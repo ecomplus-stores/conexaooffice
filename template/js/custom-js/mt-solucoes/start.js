@@ -31,17 +31,16 @@ window.addEventListener("load", (event) => {
   document.querySelector('#page-products') ? initProductPage() : null; 
   window.matchMedia("(max-width: 768px)").matches ? initMobile() : null;
 
-  const buttonBudgetMiniCart = createElement('div', 'button-budget-minicart')
+  const buttonBudgetMiniCart = createElement('a', 'button-budget-minicart');
   buttonBudgetMiniCart.textContent = 'Orçar todos os produtos do carrinho';
-  buttonBudgetMiniCart.addEventListener('click', ()=> {
-    window.location = `${window.origin}/orcamento`
-  })
+  buttonBudgetMiniCart.setAttribute('href', `${window.origin}/orcamento`);
+  
   document.querySelector('.minicart__aside .card-footer').appendChild(buttonBudgetMiniCart)
 });
 
 
 // ORCAMENTO
-window.location.pathname  == '/orcamento' ? checkItemsList() : null;
+document.querySelector('footer.foo') ? checkItemsList() : null;
 
 
 

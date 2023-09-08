@@ -312,6 +312,7 @@ select {
         }
       }
       .button-budget-minicart {
+        text-decoration: none;
         height: 4.2rem;
         color: var(--primary-color);
         font-weight: 400;
@@ -3165,6 +3166,9 @@ footer.foo {
               }
             }
             .cart__back {
+              padding: 2rem 0;
+              display: flex!important;
+              gap: 2rem;
               a {
                 display: flex;
                 justify-content: center;
@@ -5386,6 +5390,29 @@ footer {
             max-width: 100% !important;
           }
         }
+      }
+    }
+    .cart__back {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .cart>span>.row>div:nth-of-type(2) .cart__info .shipping-calculator .shipping-calculator__services .list-group>.active {
+      background-color: #c8c8c8!important;
+    }
+    .shipping-calculator__option {
+      .list-group-item.active {
+        background-color: transparent!important;
+      }
+      .shipping-line {
+        strong {
+          min-width: 4rem;
+        }
+        span {
+          padding: 1rem 0!important;
+          font-size: 1.2rem!important;
+        }
+
       }
     }
   }
