@@ -6,6 +6,7 @@ import { initCartPage } from "./cartPage";
 import { initFooter } from "./footer";
 import { initMobile } from "./mobile";
 import { createElement } from "./utils/createElementHTML";
+import { checkItemsList } from "./orcamento/budgetList";
 
 
 
@@ -35,6 +36,9 @@ window.addEventListener("load", (event) => {
   document.querySelector('.minicart__aside .card-footer').appendChild(buttonBudgetMiniCart)
 });
 
+
+// ORCAMENTO
+window.location.pathname  == '/orcamento' ? checkItemsList() : null;
 
 
 

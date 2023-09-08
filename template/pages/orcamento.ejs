@@ -19,7 +19,42 @@
 
   <main role="main" id="main">
     <%- await include('@/layout/header') %>
-    <%- await include('@/layout/sections') %>
+    
+    <div class="content-orcamento">
+      <div class="container">
+        <p class="title-page">Lista de produtos</p>
+        <div class="budgetList-content"></div>
+        <div class="content-form">
+          <form action="">
+            <div class="content-input-duplo">
+              <input type="text" name="" id="" placeholder="Nome">
+              <input type="text" name="" id="" placeholder="E-mail">
+            </div>
+            <div class="content-input-duplo">
+              <input type="text" name="" id="" placeholder="Empresa">
+              <input type="text" name="" id="" placeholder="CNPJ">
+            </div>
+            <div class="content-input-duplo">
+              <input type="text" name="" id="" placeholder="Endereço">
+              <input type="text" name="" id="" placeholder="Complemento">
+            </div>
+            <div class="content-input-quadruplo">
+              <div>
+                <input type="text" name="" id="" placeholder="Telefone">
+                <input type="text" name="" id="" placeholder="Cidade">
+              </div>
+              <div>
+                <input type="text" name="" id="" placeholder="Estado">
+                <input type="text" name="" id="" placeholder="CEP">
+              </div>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Detalhes ou Dúvidas"></textarea>
+            <button>Solicitar orçamento</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <%- await include('@/layout/footer') %>
   </main>
 
