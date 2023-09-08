@@ -1188,6 +1188,7 @@ header[class~="mini-header"] {
             .product__sku {
               margin-bottom: 2rem;
             }
+            
             div [selector="#product-actions"] {
               .product__prices {
                 margin-bottom: 1.5rem;
@@ -1441,6 +1442,12 @@ header[class~="mini-header"] {
       }
     }
   }
+  .content-sku {
+    font: 1rem;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 2rem;
+  }
   .product-card__buy {
     margin-bottom: 1rem;
     margin-top: 3rem;
@@ -1465,7 +1472,7 @@ header[class~="mini-header"] {
   .button-orcar {
     border: 1px solid var(--primary-color) !important;
     border-radius: 0px 12px;
-    padding: 1rem;
+    padding: .7rem;
     font-size: 1.4rem;
     text-transform: uppercase;
     display: flex;
@@ -1475,9 +1482,16 @@ header[class~="mini-header"] {
     opacity: 1!important;
     color: var(--primary-color);
     text-transform: uppercase;
+    background-color: transparent!important;
     cursor: pointer;
     font-weight: 500;
     font-size: 1.4rem;
+    margin-top: 0!important;
+    button {
+      background-color: transparent;
+      border: 0;
+      outline: none;
+    }
   }
   #pronta-entrega {
     position: absolute;
@@ -2085,6 +2099,12 @@ header[class~="mini-header"] {
               .product__sku {
                 color: var(--gold);
                 font-size: 1rem;
+              }
+              .content-quantity {
+                padding: 1.6rem 0 0 0;
+                font-size: 1.4rem;
+                color: #209864;
+                font-weight: 600;
               }
               #product-actions {
                 margin-top: 1.5rem;
@@ -4171,7 +4191,11 @@ footer {
 }
 
 // TUTORIAL PAGE
-article[class="page page--pages/tutorial"] {
+.banner-tutorial {
+    width: 100%;
+    margin-bottom: 3rem!important;
+  }
+#page-tutorial {
   .responsive-baner {
     margin-top: 0;
     .container {
@@ -4180,6 +4204,8 @@ article[class="page page--pages/tutorial"] {
     }
   }
   #tutorial {
+    max-width: var(--max-width-full);
+    margin: 0 auto 5rem auto;
     h1.alert {
       position: relative;
       color: var(--primary-color);
@@ -5347,6 +5373,41 @@ article[class="page page--pages/tutorial"] {
       }
     }
   }
+
+  // TUTORIAL
+  
+  #tutorial {
+    padding: 0 1rem;
+    .alert {
+      font-size: 1.5rem!important;
+    }
+    .title {
+      font-size: 1.5rem!important;
+    }
+    ul {
+      flex-direction: column;
+      margin-bottom: 3rem;
+      li {
+        width: 100%!important;
+        flex-direction: column;
+        > div {
+          width: 100%!important;
+        }
+        .descricao {
+          padding-top: 0!important;
+        }
+        .thumb {
+          display: flex;
+          justify-content: center;
+          img {
+            width: auto!important;
+          }
+        }
+      }
+    }
+  }
+
+
 
   main#spa {
     #storefront-app {

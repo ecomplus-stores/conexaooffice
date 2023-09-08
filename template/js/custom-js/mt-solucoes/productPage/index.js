@@ -5,6 +5,7 @@ import { movePrices } from "./OldPriceMove";
 import { initMenuDescription } from "./menuDescription";
 import { createElement } from "../utils/createElementHTML";
 
+
 function initProductPageDesktop () {
   cloneButtons();
   
@@ -27,6 +28,11 @@ export const initProductPage = () => {
   document.querySelector('.product__buy').after(buttonBudgetProductPage);
   buttonBudgetProductPage.addEventListener('click', ()=> {
     document.querySelector('.product__buy button').click();
-    console.log('click')
   })
+
+  // create quantity
+  const quantity = createElement('p', 'content-quantity');
+  quantity.textContent = `Restam apenas ${storefront.context.body.quantity} unidades no estoque`;
+  document.querySelector('.product__sku').after(quantity)
+
 }

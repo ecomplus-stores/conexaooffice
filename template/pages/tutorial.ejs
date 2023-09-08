@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="<%= _.lang.replace('_', '-') %>" dir="ltr">
+
+<head>
+  <%- await include('@/head') %>
+</head>
+
+<body id="page-<%= _.pageName %>" class="_<%= _.route.path.replace(/\//g, '_') %>" <% if (_.route.resource) { %>
+  data-resource="<%= _.route.resource %>" data-resource-id="<%= _.state._id %>" <% } else if (_.route.collection) { %>
+  data-cms-collection="<%= _.route.collection %>" <% } %>>
+  <%- await include('@/layout/menu') %>
+
+  <main role="main" id="main">
+    <%- await include('@/layout/header') %>
+    <div class="banner-tutorial">
+      <img src="/img/tutorial/banner-tutorial.png" alt="">
+    </div>
+    <div id="tutorial">
+      <h1 class="alert">Você esta na página correta! :)</h1>
+      <div class="title">CONHEÇA O NOSSO
+        <span>PASSO A PASSO</span> E FAÇA JÁ O SEU <span>ORÇAMENTO</span>.</div>
+      <h2 class="title-list">
+        <div class="topic">1</div> <span>Orçamento por lista</span>
+      </h2>
+      <ul>
+        <li>
+          <div class="descricao">
+            <h2 class="title-tutorial-item">Passo 1</h2>
+            <p>Selecione
+              todos os produto que deseja e clique no botão <span>"adicionar ao carrinho"!</span> O produto será
+              adicionado ao carrinho.</p>
+            <p>O produto será adicionado ao carrinho</p>
+          </div>
+          <div class="thumb"><img src="/img/tutorial/thumb_step1.png"></div>
+        </li>
+        <li>
+          <div class="descricao">
+            <h2 class="title-tutorial-item">Passo 2</h2>
+            <p>Quando estiver com todos os produtos desejados no
+              carrinho, clique no botão <span>"Orçar todos os produtos do carrinho"</span>.</p>
+          </div>
+          <div class="descricao">
+            <h2 class="title-tutorial-item">Passo 3</h2>
+            <p>Você será direcionado á
+              <span>"Página de Orçamento"</span> preencha o formulário e aguarde o contato.</p>
+            <p>O produto será
+              adicionado ao carrinho</p>
+          </div>
+        </li>
+        <li>
+          <div class="thumb"><img src="/img/tutorial/thumb_step2.png"></div>
+        </li>
+      </ul>
+      <h2 class="title-list">
+        <div class="topic">2</div> <span>Solicite seu orçamento</span>
+      </h2>
+      <div class="linha">
+        <p>Preencha na página a seguir o formulário com seus dados e informações e aguarde
+          contato da <span>Conexão Office</span>.</p>
+        <p><strong>ATENÇÃO:</strong> Essa forma de preenchimento não
+          vincula nenhum dos produtos desejados.</p>
+      </div><a href="/pages/orcamento" class="button">CLIQUE AQUI E
+        PREENCHA O FORMULÁRIO</a>
+    </div>
+    <%- await include('@/layout/footer') %>
+  </main>
+
+  <%- await include('@/json') %>
+  <%- await include('@/scripts') %>
+</body>
+
+</html>
