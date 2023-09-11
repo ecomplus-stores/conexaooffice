@@ -18,5 +18,5 @@ export const cloneButtons = () => {
   cloneContentShare ();
   cloneContentFavoriteButton();
   cloneContentNotification();
-  clonePricesDiscount ();
+  document.querySelector('.product__prices .product__discount') ? clonePricesDiscount () : null;
 }
