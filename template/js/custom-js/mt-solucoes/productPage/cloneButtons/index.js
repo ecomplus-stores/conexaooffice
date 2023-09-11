@@ -3,7 +3,7 @@ function cloneContentShare () {
 }
 
 function cloneContentFavoriteButton () {
-  document.querySelector('.product__buy').appendChild(document.querySelector('.product__buy + div a'))
+  document.querySelector('.product__buy').appendChild(document.querySelector('.product__favorite'))
 }
 
 function cloneContentNotification () {

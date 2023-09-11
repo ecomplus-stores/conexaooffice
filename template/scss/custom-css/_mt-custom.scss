@@ -696,6 +696,20 @@ div[data-mbz-button-popup-wrapper] {
                   }
                 }
               }
+              .product-card__buy {
+                position: relative!important;
+                margin-bottom: 0!important;
+                left: 0!important;
+                button {
+                  width: 100%;
+                  
+                }
+              }
+              .button-orcar {
+                button {
+                  font-size: 1.4rem;
+                }
+              }
             }
           }
         }
@@ -2358,6 +2372,9 @@ header[class~="mini-header"] {
                     margin-bottom: 2rem;
                     cursor: pointer;
                   }
+                  .product__short-stock {
+                    display: none;
+                  }
                   .product__payment {
                     // display: none;
                     width: 43rem;
@@ -2438,6 +2455,7 @@ header[class~="mini-header"] {
                       }
                     }
                   }
+                  
                 }
               }
             }
@@ -2448,6 +2466,18 @@ header[class~="mini-header"] {
   }
   + .content-instafeed {
     display: none;
+  }
+}
+#_offers-nt__collapse-price {
+  .card-body {
+    iframe {
+      #notification-product {
+        background-color: cyan!important;
+        #notification-form {
+        padding: 1rem;
+        }
+      }
+    }
   }
 }
 .content-menu-description {
