@@ -7,6 +7,7 @@ import { initFooter } from "./footer";
 import { initMobile } from "./mobile";
 import { createElement } from "./utils/createElementHTML";
 import { checkItemsList } from "./orcamento/budgetList";
+import { isElementLoaded } from "./utils/isElementLoaded";
 
 
 
@@ -35,12 +36,12 @@ window.addEventListener("load", (event) => {
   buttonBudgetMiniCart.textContent = 'Orçar todos os produtos do carrinho';
   buttonBudgetMiniCart.setAttribute('href', `${window.origin}/orcamento`);
   
-  document.querySelector('.minicart__aside .card-footer').appendChild(buttonBudgetMiniCart)
+  isElementLoaded('.minicart__aside .card-footer').then(()=>{
+    document.querySelector('.minicart__aside .card-footer').appendChild(buttonBudgetMiniCart)
+  });
 });
-
-
 // ORCAMENTO
-document.querySelector('footer.foo') ? checkItemsList() : null;
+window.location.pathname == '/orcamento' ? checkItemsList() : null;
 
 
 

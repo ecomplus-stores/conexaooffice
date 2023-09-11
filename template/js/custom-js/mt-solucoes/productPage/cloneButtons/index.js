@@ -10,8 +10,13 @@ function cloneContentNotification () {
   document.querySelector('.product__prices .prices__value').appendChild(document.querySelector('.offers-notification'))
 }
 
+function clonePricesDiscount () {
+  document.querySelector('.product__prices .prices__value').appendChild(document.querySelector('.product__prices .product__discount'))
+}
+
 export const cloneButtons = () => {
   cloneContentShare ();
   cloneContentFavoriteButton();
   cloneContentNotification();
+  clonePricesDiscount ();
 }
