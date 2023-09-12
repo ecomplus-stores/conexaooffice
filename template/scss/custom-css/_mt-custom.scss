@@ -3536,7 +3536,7 @@ header.app__header {
           // font-size: 2rem;
           // font-weight: 700;
           // margin-bottom: 3rem;
-          border-bottom: 2px solid var(--gold)!important;
+          border-bottom: 2px solid var(--primary-color)!important;
         }
         #checkout {
           > .row {
@@ -3658,6 +3658,17 @@ header.app__header {
                       border: 1px solid var(--grey-c8);
                       height: 3.6rem;
                       font-size: 1.3rem;
+                    }
+
+
+                  }
+                  // PF
+                  .account-form__inscription {
+                    .custom-control-label {
+                      padding-left: 1rem;
+                    }
+                    .custom-control-input:checked~.custom-control-label:before {
+                      background-color: var(--primary-color)!important;
                     }
                   }
                   button {
@@ -3802,6 +3813,9 @@ header.app__header {
                       flex: 0 0 88px;
                       height: 88px;
                       background-color: #FFF;
+                      img {
+                        height: 88px;
+                      }
                     }
                     > div {
                       font-size: 1.4rem;
@@ -3825,6 +3839,9 @@ header.app__header {
                       }
                     }
                   }
+                }
+                .checkout__btn-offers {
+                  display: none;
                 }
                 .summary__amount {
                   .summary__amount__row {
