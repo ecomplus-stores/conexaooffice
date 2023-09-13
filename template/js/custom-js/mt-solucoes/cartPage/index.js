@@ -14,7 +14,7 @@ export const initCartPage = () => {
   isElementLoaded('.cart__back').then(() => {
     setTimeout(() => {
       document.querySelector('.cart__back').appendChild(btn)
-
     }, 1000)
+    document.querySelector('.cart__list').after(document.querySelector('.cart__back'))
   });
 }

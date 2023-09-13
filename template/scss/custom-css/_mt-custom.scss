@@ -3152,6 +3152,7 @@ footer.foo {
             max-width: 70%;
             .cart__list {
               .cart-item {
+                border-top: 1px solid rgba($color: #707070, $alpha: 0.3)!important;
                 .cart-item__container {
                   .cart-item__thumb {
                   }
@@ -3259,7 +3260,10 @@ footer.foo {
                     .input-group {
                       gap: 1rem;
                       input#shipping-calculator-zip {
-                        height: 3.5rem;
+                        flex: auto;
+                        width: 11rem;
+                        max-width: 11rem;
+                        height: 2.7rem;
                         border: 1px solid var(--grey-c8);
                         font-size: 1.2rem;
                         border-radius: 0.5rem;
