@@ -2409,6 +2409,16 @@ header[class~="mini-header"] {
                   }
                   .shipping-calculator {
                     .shipping-calculator__form {
+                      .btn-search-zip {
+                        width: 100%;
+                        display: block;
+                        color: var(--primary-color);
+                        padding-right: 1rem;
+                        text-align: right;
+                        padding: 1rem;
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                      }
                       .form-group {
                         label {
                           font-size: 1.3rem;
@@ -4422,11 +4432,11 @@ footer {
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        padding: 6rem 0;
+        padding: 4rem 0;
         .icon {
         }
         h2 {
-          color: var(--primary-color);
+          color: var(--gold);
         }
       }
       .content-sitemap {
