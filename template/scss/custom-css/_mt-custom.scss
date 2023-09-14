@@ -1339,7 +1339,10 @@ header[class~="mini-header"] {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem;
+  .alert-empty {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
   li  {
     position: relative;
     width: 24.3%;
