@@ -41,24 +41,8 @@ window.addEventListener("load", (event) => {
   });
 });
 // ORCAMENTO
-// MailBiz
-function initMailBiz () {
-  (function(m, a, i, l, b, z, j, s) {
-    if (m[z]) return;
-    m[z] = {
-      id: b,
-      ready: 0
-    };
-    z = a.createElement(i);
-    j = a.getElementsByTagName(i)[0];
-    z.async = 1;
-    z.src = l;
-    j.parentNode.insertBefore(z, j);
-  })(window, document, 'script', 'https://d3eq1zq78ux3cv.cloudfront.net/static/scripts/integration.min.js', '650b0c927058d778ef84000c', 'MailbizIntegration');
-  console.log('Init MailBiz')
-}
+
 window.location.pathname == '/orcamento' ? checkItemsList() : null;
-window.location.pathname == '/orcamento' ? initMailBiz () : null;
 
 
 
