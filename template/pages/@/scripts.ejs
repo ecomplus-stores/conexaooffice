@@ -20,6 +20,9 @@
   }
 </script>
 <% } %>
+<script src= 
+    "https://smtpjs.com/v3/smtp.js"> 
+  </script> 
 
 <script src="/<%= _.route.path.startsWith('/app/') ? 'checkout' : 'storefront' %>.js"></script>
 <script>
@@ -56,6 +59,7 @@
 
   });
 </script>
+
 <%
 if (Array.isArray(_.widgets) && _.widgets.length) {
   // append widgets additional HTML
