@@ -11,7 +11,11 @@ const createElementBudget = ({ name, picture, sku, product_id }) => {
     <div class="thumb"><img src="${picture.normal.url}" alt=""></div>
     <div class="info">
       <h2>${name}</h2>
-      <span>${sku}</span>
+      <span><b>SKU:</b>${sku}</span>
+      <div class="qtda">
+        <p>Quantidade <span>*</span></p>
+        <input type="number" min="1" placeholder="0">
+      </div>
     </div>
     <div class='remove-budgetitem' id-item="${product_id}"></div>
   `;
@@ -33,7 +37,15 @@ function createBudgetList() {
         : null;
     });
   });
+
+  
 }
+function isFillQtda () {
+  const array = Array.prototype.slice.call(document.querySelectorAll('.budgetlist-item input'))
+  const isQtdaFill = (currentValue) => currentValue.value > 0;
+  return array.every(isQtdaFill)
+}
+
 
 export const checkItemsList = () => {
   ecomCart.data.items.length > 0
@@ -44,9 +56,10 @@ export const checkItemsList = () => {
     .querySelector(".content-form button")
     .addEventListener("click", (e) => {
       e.preventDefault();
-      let skus = []
+
+      let skus = [];
       ecomCart.data.items.forEach((element) => {
-        skus.push(element.skus)
+        skus.push(element.skus);
       });
       const listSkus = skus.toString();
       const formulario = document.querySelector(".content-form form");
