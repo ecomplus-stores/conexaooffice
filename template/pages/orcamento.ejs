@@ -21,8 +21,9 @@
     <%- await include('@/layout/header') %>
     
     <div class="content-orcamento">
+      <div class="content-title-page"><h1 class="title-page">Orçamento</h1></div>
       <div class="container">
-        <p class="title-page">Lista de produtos</p>
+        <p class="title-page">Lista de produtos selecionados</p>
         <div class="budgetList-content"></div>
         <div class="content-form">
           <form method="post">
@@ -48,6 +49,7 @@
                 <input type="text" name="cep" id="" placeholder="CEP">
               </div>
             </div>
+            <input type="hidden" name="sku-list">
             <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Detalhes ou Dúvidas"></textarea>
             <button>Solicitar orçamento</button>
           </form>

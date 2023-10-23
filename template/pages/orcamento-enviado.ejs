@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="<%= _.lang.replace('_', '-') %>" dir="ltr">
+
+<head>
+  <%- await include('@/head') %>
+</head>
+
+<body
+  id="page-<%= _.pageName %>"
+  class="_<%= _.route.path.replace(/\//g, '_') %>"
+  <% if (_.route.resource) { %>
+    data-resource="<%= _.route.resource %>"
+    data-resource-id="<%= _.state._id %>"
+  <% } else if (_.route.collection) { %>
+    data-cms-collection="<%= _.route.collection %>"
+  <% } %>
+>
+  <%- await include('@/layout/menu') %>
+
+  <main role="main" id="main">
+    <%- await include('@/layout/header') %>
+    
+    <div class="content-orcamento">
+      <div class="content-title-page"><h1 class="title-page" style="border-bottom: 0;">Orçamento enviado com sucesso.</h1></div>
+      <p class="text-send">Recebemos sua solicitação de orçamento, em breve entraremos em contato com você.</p>
+      <a href="/" class="button-return">Continuar navegando.</a>
+      <div class="container">
+        
+      </div>
+    </div>
+
+    <%- await include('@/layout/footer') %>
+  </main>
+
+  <%- await include('@/json') %>
+  <%- await include('@/scripts') %>
+  <script>(function(m, a, i, l, b, z, j, s) {
+    if (m[z]) return;
+    m[z] = {
+      id: b,
+      ready: 0
+    };
+    z = a.createElement(i);
+    j = a.getElementsByTagName(i)[0];
+    z.async = 1;
+    z.src = l;
+    j.parentNode.insertBefore(z, j);
+  })(window, document, 'script', 'https://d3eq1zq78ux3cv.cloudfront.net/static/scripts/integration.min.js', '6525bcce7058d778ef8af1ef', 'MailbizIntegration');
+  </script>
+</body>
+
+</html>

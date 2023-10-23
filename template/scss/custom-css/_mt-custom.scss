@@ -1374,16 +1374,18 @@ header[class~="mini-header"] {
         -webkit-box-orient: vertical;
         margin-bottom: 0.7rem !important;
       }
-      span {
-        color: #966400;
-        text-transform: uppercase;
-        margin-bottom: 0.5rem;
-        span {
-          color: red;
-          font-weight: 500;
+      > div {
+        span, b {
+          color: #966400;
+          text-transform: uppercase;
+          margin-bottom: 0.5rem;
+          span {
+            color: red;
+            font-weight: 500;
+          }
         }
       }
-      .qtda {
+      div.qtda {
         p {
           font-size: 1.2rem;
           font-weight: 500;
@@ -4566,7 +4568,19 @@ footer {
 }
 
 .content-orcamento {
+  
   padding: 3rem 0 6rem 0;
+  .content-title-page {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    .title-page {
+      color: #000;
+      padding: 0 1rem;
+      border-bottom: 2px solid var(--primary-color);
+    }
+  }
   .title-page {
     text-align: left;
   }
@@ -4623,10 +4637,6 @@ footer {
         opacity: 1;
         cursor: pointer
       }
-      button.inative {
-        opacity: .5;
-        cursor: not-allowed;
-      }
     }
     .content-input-duplo {
       width: 100%;
@@ -4676,6 +4686,23 @@ footer {
       justify-content: center;
       margin-bottom: 3rem;
     }
+  }
+  p.text-send {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .button-return {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    display: block;
+    width: 22rem;
+    text-align: center;
+    background: var(--primary-color);
+    color: #FFF;
+    text-transform: uppercase;
   }
 }
 // TUTORIAL PAGE
@@ -6041,6 +6068,8 @@ footer {
         margin-bottom: 3rem;
       }
     }
+
+    
   }
 
   main#spa {

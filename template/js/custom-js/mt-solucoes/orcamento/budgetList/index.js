@@ -11,10 +11,10 @@ const createElementBudget = ({ name, picture, sku, product_id }) => {
     <div class="thumb"><img src="${picture.normal.url}" alt=""></div>
     <div class="info">
       <h2>${name}</h2>
-      <span><b>SKU:</b>${sku}</span>
+      <div sytle="display: flex"><b>SKU:</b><span>${sku}</span></div>
       <div class="qtda">
         <p>Quantidade <span>*</span></p>
-        <input type="number" min="1" placeholder="0">
+        <input type="number" min="1" placeholder="0" sku-item="${sku}">
       </div>
     </div>
     <div class='remove-budgetitem' id-item="${product_id}"></div>
@@ -27,7 +27,7 @@ function createBudgetList() {
   ecomCart.data.items.forEach((element) => {
     createElementBudget(element);
   });
-
+  
   document.querySelectorAll(".remove-budgetitem").forEach((element) => {
     element.addEventListener("click", (e) => {
       ecomCart.removeItem(e.target.getAttribute("id-item"));
@@ -36,15 +36,15 @@ function createBudgetList() {
         ? document.querySelector(".budgetList-content").appendChild(emptyAlert)
         : null;
     });
+
+
+    document.querySelector('.content-form button').classList.add('inative')
+    document.querySelector('.content-form button').setAttribute('disable', 'true')
   });
 
   
 }
-function isFillQtda () {
-  const array = Array.prototype.slice.call(document.querySelectorAll('.budgetlist-item input'))
-  const isQtdaFill = (currentValue) => currentValue.value > 0;
-  return array.every(isQtdaFill)
-}
+
 
 
 export const checkItemsList = () => {
@@ -61,7 +61,16 @@ export const checkItemsList = () => {
       ecomCart.data.items.forEach((element) => {
         skus.push(element.skus);
       });
-      const listSkus = skus.toString();
+
+      document.querySelectorAll('.budgetlist-item input').forEach(element => {
+        const objItem = {
+            sku: element.getAttribute('sku-item'),
+            qtda: element.value
+        }
+        document.querySelector('input[name="sku-list"]').value += `${objItem.qtda + 'x -'} ${objItem.sku}, `
+      })
+
+      // const listSkus = skus.toString();
       const formulario = document.querySelector(".content-form form");
       const data = {
         nome: formulario.elements["nome"].value,
@@ -74,6 +83,7 @@ export const checkItemsList = () => {
         cidade: formulario.elements["cidade"].value,
         estado: formulario.elements["estado"].value,
         cep: formulario.elements["cep"].value,
+        skus: formulario.elements["sku-list"].value,
         mensagem: formulario.elements["mensagem"].value,
       };
       Email.send({
@@ -131,7 +141,7 @@ export const checkItemsList = () => {
           </tr>
           <tr>
             <td><strong>SKUS:</strong></td>
-            <td>${listSkus}</td>
+            <td>${data.skus}</td>
           </tr>
           <tr>
             <td><strong>Mensagem:</strong></td>
@@ -140,7 +150,7 @@ export const checkItemsList = () => {
         </table>
         `,
       }).then(function (message) {
-        alert("E-mail enviado!");
+        window.location = '/orcamento-enviado'
       });
     });
 };
