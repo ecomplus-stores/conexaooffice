@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.074a3f5fe90f08e57315b3de1a714242.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.c223983bb7b57c9dec1f81f54a1b79b0.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.895ca88dc051401babb28c6a5a9a944d.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.545cd00e0d0b40bc159b4e5202df8c91.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.fd34bae2a248474a86262f95d7233993.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Conexão Office",
+  "short_name": "Sobre Nós",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Nada como trabalhar em um ambiente bonito, agradável, organizado, capaz de ampliar a produtividade dos seus colaboradores. Essa é a proposta da Conexão Office, que há mais de 20 anos fornece móveis para escritórios e uso profissional. Sempre em sintonia com as principais tendências do mobiliário, a Conexão Office atende às necessidades de empresas de vários portes, desde home offices até corporações com vários postos de trabalho. ",
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
+}
