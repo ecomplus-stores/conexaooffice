@@ -5,52 +5,36 @@
   <%- await include('@/head') %>
 </head>
 
-<body
-  id="page-<%= _.pageName %>"
-  class="_<%= _.route.path.replace(/\//g, '_') %>"
-  <% if (_.route.resource) { %>
-    data-resource="<%= _.route.resource %>"
-    data-resource-id="<%= _.state._id %>"
-  <% } else if (_.route.collection) { %>
-    data-cms-collection="<%= _.route.collection %>"
-  <% } %>
->
+<body id="page-<%= _.pageName %>" class="_<%= _.route.path.replace(/\//g, '_') %>" <% if (_.route.resource) { %>
+  data-resource="<%= _.route.resource %>" data-resource-id="<%= _.state._id %>" <% } else if (_.route.collection) { %>
+  data-cms-collection="<%= _.route.collection %>" <% } %>>
   <%- await include('@/layout/menu') %>
 
   <main role="main" id="main">
     <%- await include('@/layout/header') %>
-    
+
     <div class="content-orcamento">
-      <div class="content-title-page"><h1 class="title-page">Orçamento</h1></div>
+      <div class="content-title-page">
+        <h1 class="title-page">Orçamento</h1>
+      </div>
       <div class="container">
         <p class="title-page">Lista de produtos selecionados</p>
         <div class="budgetList-content"></div>
         <div class="content-form">
           <form method="post">
-            <div class="content-input-duplo">
-              <input type="text" name="nome" id="" placeholder="Nome">
-              <input type="text" name="email" id="" placeholder="E-mail">
+            <div class="content-input-single">
+              <input type="text" name="nome" id="" placeholder="Nome (campo obrigatório)" required>
             </div>
             <div class="content-input-duplo">
-              <input type="text" name="empresa" id="" placeholder="Empresa">
-              <input type="text" name="cnpj" id="" placeholder="CNPJ">
+              <input type="text" name="email" id="" placeholder="E-mail (campo obrigatório)" required>
+              <input type="text" name="telefone" id="" placeholder="Telefone (campo obrigatório)" required>
             </div>
             <div class="content-input-duplo">
               <input type="text" name="endereco" id="" placeholder="Endereço">
-              <input type="text" name="complemento" id="" placeholder="Complemento">
-            </div>
-            <div class="content-input-quadruplo">
-              <div>
-                <input type="text" name="telefone" id="" placeholder="Telefone">
-                <input type="text" name="cidade" id="" placeholder="Cidade">
-              </div>
-              <div>
-                <input type="text" name="estado" id="" placeholder="Estado">
-                <input type="text" name="cep" id="" placeholder="CEP">
-              </div>
+              <input type="text" name="cep" id="" placeholder="CEP">
             </div>
             <input type="hidden" name="sku-list">
-            <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Detalhes ou Dúvidas"></textarea>
+            <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Detalhes ou Dúvidas (campo obrigatório)"></textarea>
             <button>Solicitar orçamento</button>
           </form>
         </div>
@@ -62,18 +46,20 @@
 
   <%- await include('@/json') %>
   <%- await include('@/scripts') %>
-  <script>(function(m, a, i, l, b, z, j, s) {
-    if (m[z]) return;
-    m[z] = {
-      id: b,
-      ready: 0
-    };
-    z = a.createElement(i);
-    j = a.getElementsByTagName(i)[0];
-    z.async = 1;
-    z.src = l;
-    j.parentNode.insertBefore(z, j);
-  })(window, document, 'script', 'https://d3eq1zq78ux3cv.cloudfront.net/static/scripts/integration.min.js', '6525bcce7058d778ef8af1ef', 'MailbizIntegration');
+  <script>
+    (function (m, a, i, l, b, z, j, s) {
+      if (m[z]) return;
+      m[z] = {
+        id: b,
+        ready: 0
+      };
+      z = a.createElement(i);
+      j = a.getElementsByTagName(i)[0];
+      z.async = 1;
+      z.src = l;
+      j.parentNode.insertBefore(z, j);
+    })(window, document, 'script', 'https://d3eq1zq78ux3cv.cloudfront.net/static/scripts/integration.min.js',
+      '6525bcce7058d778ef8af1ef', 'MailbizIntegration');
   </script>
 </body>
 

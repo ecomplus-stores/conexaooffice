@@ -1,5 +1,6 @@
 import { createElement } from "../../utils/createElementHTML";
 
+
 const emptyAlert = createElement("p", "alert-empty");
 emptyAlert.textContent = "Não existem itens na lista de orçamento.";
 
@@ -75,25 +76,19 @@ export const checkItemsList = () => {
       const data = {
         nome: formulario.elements["nome"].value,
         email: formulario.elements["email"].value,
-        empresa: formulario.elements["empresa"].value,
-        cnpj: formulario.elements["cnpj"].value,
-        endereco: formulario.elements["endereco"].value,
-        complemento: formulario.elements["complemento"].value,
         telefone: formulario.elements["telefone"].value,
-        cidade: formulario.elements["cidade"].value,
-        estado: formulario.elements["estado"].value,
+        endereco: formulario.elements["endereco"].value,
         cep: formulario.elements["cep"].value,
         skus: formulario.elements["sku-list"].value,
         mensagem: formulario.elements["mensagem"].value,
       };
       Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "acypriano@mtsolucoes.com.br",
-        Password: "43CCFCFB639D1B4268A38DBA2277EDC98F4A",
-        To: "andersen.cypriano@gmail.com",
-        From: "acypriano@mtsolucoes.com.br",
-        Subject: "Sending Email using javascript",
-        Html: "<h1>GeeksforGeeks</h1>",
+        Username: "contato@conexaooffice.com.br",
+        Password: "9156899586723675B702A1595861596DC100",
+        To: "contato@conexaooffice.com.br",
+        From: "contato@conexaooffice.com.br",
+        Subject: "Solicitação de orçamento - Conexão Office",
         Body: `
         <table>
           <thead>
@@ -107,37 +102,14 @@ export const checkItemsList = () => {
             <td><strong>E-mail:</strong></td>
             <td>${data.email}</td>
           </tr>
-          <tr>
-            <td><strong>Empresa:</strong></td>
-            <td>${data.empresa}</td>
-          </tr>
-          <tr>
-            <td><strong>CNPJ:</strong></td>
-            <td>${data.cnpj}</td>
-          </tr>
+          
           <tr>
             <td><strong>Endereço:</strong></td>
             <td>${data.endereco}</td>
           </tr>
           <tr>
-            <td><strong>Complemento:</strong></td>
-            <td>${data.complemento}</td>
-          </tr>
-          <tr>
             <td><strong>Telefone:</strong></td>
             <td>${data.telefone}</td>
-          </tr>
-          <tr>
-            <td><strong>Cidade:</strong></td>
-            <td>${data.cidade}</td>
-          </tr>
-          <tr>
-            <td><strong>Estado:</strong></td>
-            <td>${data.estado}</td>
-          </tr>
-          <tr>
-            <td><strong>CEP:</strong></td>
-            <td>${data.cep}</td>
           </tr>
           <tr>
             <td><strong>SKUS:</strong></td>
