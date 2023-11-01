@@ -6,6 +6,6 @@ import { scrollToTop } from "./scrollToTop";
 export const initFooter = () => {
   document.querySelector('.content-contato') ? setHorario() : null;
   document.querySelector('.content-lojas') ? initMenuOurStores() : null;
-  initWidgetWhatsAppMT();
+  // initWidgetWhatsAppMT();
   scrollToTop(); 
 }
