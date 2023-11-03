@@ -21,7 +21,7 @@ export const initProductPage = () => {
 
   // create quantity
   const quantity = createElement('p', 'content-quantity');
-  quantity.textContent = `Restam apenas ${storefront.context.body.quantity} unidades no estoque`;
+  quantity.textContent = `Disponível em estoque`;
   document.querySelector('.product__sku').after(quantity);
 
 
