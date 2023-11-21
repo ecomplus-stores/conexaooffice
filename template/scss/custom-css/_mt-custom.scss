@@ -4682,11 +4682,11 @@ footer {
         height: 4rem;
       }
     }
-    .content-input-duplo {
+    .content-input-quadruplo {
       display: flex;
-      gap: 5rem;
+      gap: 2rem;
       input {
-        width: 100%;
+        width: 25%;
         border: 1px solid var(--primary-color);
         outline: none;
         font-size: 1.3rem;
@@ -4697,7 +4697,7 @@ footer {
       width: 100%;
       border: 1px solid var(--primary-color);
       font-size: 1.3rem;
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
     }
     button {
       background-color: var(--primary-color);
@@ -6061,7 +6061,7 @@ footer {
           margin-bottom: 2rem;
         }
       }
-      .content-input-duplo {
+      .content-input-quadruplo {
         width: 100%;
         display: flex;
         justify-content: center;
