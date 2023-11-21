@@ -4736,8 +4736,15 @@ footer {
   margin-bottom: 3rem !important;
   img {
     width: 100%;
+    &:nth-of-type(1) {
+      display: block;
+    }
+    &:nth-of-type(2) {
+      display: none!important;
+    }
   }
 }
+
 #page-tutorial {
   .responsive-baner {
     margin-top: 0;
@@ -5962,7 +5969,20 @@ footer {
   }
 
   // TUTORIAL
-
+// TUTORIAL PAGE
+.banner-tutorial {
+  width: 100%;
+  margin-bottom: 3rem !important;
+  img {
+    width: 100%;
+    &:nth-of-type(1) {
+      display: none!important;
+    }
+    &:nth-of-type(2) {
+      display: block!important;
+    }
+  }
+}
   #tutorial {
     padding: 0 1rem;
     .alert {
