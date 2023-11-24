@@ -28,16 +28,6 @@
       "enabled": false
     },
     {
-      "type": "offers-timer",
-      "max_hours": 24,
-      "start": "2023-11-23T23:53:43.405Z",
-      "end": "2023-11-25T23:53:43.455Z",
-      "notes": "Super Oferta de Black Friday. \nValidado até dia 25/11 ou até durar os estoques!",
-      "offers": [
-        "6351c7c373321213f8b5e640"
-      ]
-    },
-    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 13,
@@ -79,6 +69,16 @@
     {
       "type": "newsletter-mt",
       "active": true
+    },
+    {
+      "type": "offers-timer",
+      "max_hours": 24,
+      "start": "2023-11-23T23:53:43.405Z",
+      "end": "2023-11-25T23:53:43.455Z",
+      "notes": "Super Oferta de Black Friday. \nValidado até dia 25/11 ou até durar os estoques!",
+      "offers": [
+        "6351c7c373321213f8b5e640"
+      ]
     },
     {
       "type": "collection-shelf",
