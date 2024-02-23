@@ -18,9 +18,9 @@ const themeCustom = _.settings.theme.custom || ''
     <div class="content-institucional">
       <% if (footer.links_1.list_pages || footer.links_1.list.find(({ url }) => url)) { %>
       <div class="col-12 col-sm-6 col-lg col-xl-auto px-xl-4">
-        <h2>
+        <h4>
           <%= footer.links_1.title || _.dictionary('pages') %>
-        </h2>
+        </h4>
         <div class="collapse show" id="footer-pages">
           <% if (footer.links_1.list_pages) { %>
           <ul class="footer__links">
