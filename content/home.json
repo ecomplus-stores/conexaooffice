@@ -10,16 +10,16 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/colores-disponiveis-1-.jpg",
-          "mobile_img": "/img/uploads/design-sem-nome.jpg",
-          "link": "https://www.conexaooffice.com.br/produtos/cadeiras"
+          "img": "/img/uploads/02.png",
+          "mobile_img": "/img/uploads/01.png",
+          "link": "https://www.conexaooffice.com.br/produtos"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/rotativosdesk.png",
-          "mobile_img": "/img/uploads/rotativos_2.png",
-          "link": "https://www.conexaooffice.com.br/home-e-office"
+          "img": "/img/uploads/colores-disponiveis-1-.jpg",
+          "mobile_img": "/img/uploads/design-sem-nome.jpg",
+          "link": "https://www.conexaooffice.com.br/produtos/cadeiras"
         }
       ]
     },
