@@ -343,12 +343,20 @@ div[data-mbz-button-popup-wrapper] {
   display: none !important;
 }
 // HEADER
+.mini-header{
+  .top-bar__nav{
+    display: none;
+  }
+}
 .header {
   position: fixed;
-  padding: 4rem 0;
+  padding: 0rem 0;
   transition: all 0.5s ease;
   border: 0;
   background-color: #fff;
+  .top-bar__nav{
+    display: none;
+  }
   box-shadow: none;
   .topo {
     display: flex;
@@ -785,6 +793,9 @@ header[class~="mini-header"] {
   background-color: var(--primary-color) !important;
   transition: all 0.5s ease;
   padding: 1rem 0;
+  .top-bar__nav{
+    display: none;
+  }
   .topo {
     margin-bottom: 0;
     border-bottom: none;
@@ -4942,6 +4953,9 @@ footer {
   }
   .header {
     background-color: var(--white);
+    .top-bar__nav{
+      display: none;
+    }
     padding: 1rem 0 1.5rem 0.5rem 1.5rem;
     box-shadow: none;
     .topo {
