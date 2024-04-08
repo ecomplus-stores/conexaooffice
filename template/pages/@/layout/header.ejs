@@ -49,12 +49,11 @@ const hasMegamenu = header.desktop_megamenu
 const isAlphabeticalOrderSubmenu = header.alphabetical_order_submenu
 const fullWidthSubmenu = header.full_width_submenu
 const isCentralizedLogo = header.centralized_logo
-const hasAllDepartments = header.menu_all_departments
 %>
 
 <div id="overlay" class="fade"></div>
 
-<div class="top-bar">
+<!-- <div class="top-bar">
   <% if (header.marketing_stripe) { %>
     <% if (header.marketing_stripe.text) { %>
       <% if (header.marketing_stripe.link) { %>
@@ -74,40 +73,52 @@ const hasAllDepartments = header.menu_all_departments
   <% } %>
 
   <div class="top-bar__nav d-none d-md-block">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col d-flex">
-        <nav class="top-bar__contacts-container">
-          <a href="https://www.conexaooffice.com.br/" target="_blank" rel="noopener">
-            <img width="80" style="    vertical-align: middle;" src="https://www.conexaooffice.com.br/img/uploads/logotipo-home-png-site.png">
-          </a>
-          <a href="https://www.conexaooffice.com.br/" target="_blank" rel="noopener">                  
-            <span>Veja também nossa linha de escritório</span>
-          </a>  
-          
-        </nav>
-        
-        
-      </div>
-        <div class="col-auto">
-          <a href="/pages/venda-corporativa" target="_blank" rel="noopener">
-            <img src="/img/uploads/vendacorporativa.svg" alt="">
-          </a>
-          <a href="/pages/venda-corporativa" target="_blank" rel="noopener">   
-            <span>Venda corporativa </span>
-          </a>
-          <a href="/pages/nossaslojas" target="_blank" rel="noopener">
-            <img src="/img/uploads/nossaslojas.svg" alt="">
-          </a>
-          <a href="/pages/nossaslojas" target="_blank" rel="noopener">   
-            <span>Nossas lojas</span>
-          </a>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col d-flex">
+          <nav class="top-bar__page-links">
+            <% if (header.contacts_stripe.pages) { %>
+              <div class="<%= (themeCustom === 'ecom-beauty' && isCategoriesNavFull) ? 'd-lg-none' : '' %>">
+                <% header.contacts_stripe.pages.forEach(({ link, title }) => { %>
+                  <a href="<%= link %>"><%= title %></a>
+                <% }) %>
+              </div>
+            <% } %>
+          </nav>
+          <% if (header.contacts_stripe.phone_wpp) { %>
+            <div class="top-bar__contacts-container">
+              <% if (contacts.whatsapp) { %>
+                <a href="javascript:;" target="_blank" rel="noopener" class="whatsapp-link"
+                  data-tel="<%= contacts.whatsapp.replace(/\D/g, '') %>">
+                  <i class="i-whatsapp"></i>
+                  <%= contacts.whatsapp %>
+                </a>
+                <% } %>
+              <% if (contacts.phone) { %>
+                <a href="tel:+<%= contacts.phone.replace(/\D/g, '') %>" target="_blank" rel="noopener">
+                  <i class="i-phone"></i>
+                  <%= contacts.phone %>
+                </a>
+              <% } %>
+            </div>
+            
+          <% } %>
         </div>
+        <% if (header.contacts_stripe.socials) { %>
+          <div class="col-auto">
+            <% networks.forEach(network => { %>
+              <% if (contacts[network]) { %>
+                <a href="<%= contacts[network] %>" target="_blank" rel="noopener">
+                  <i class="i-<%= network %>"></i>
+                </a>
+              <% } %>
+            <% }) %>
+          </div>
+        <% } %>
+      </div>
     </div>
-    <hr style="background-color:#e26d03">
   </div>
-</div> 
-
+</div> -->
 
 <header class="header">
   <div class="content-center topo">
@@ -457,50 +468,6 @@ const hasAllDepartments = header.menu_all_departments
       <% if (categories && categories.length) { %>
         <div class="d-none d-lg-block <%= isCategoriesNavFull ? 'col-12 order-lg-last' : 'col' %> header__nav-block">
           <nav class="header__nav<%= isCategoriesNavFull ? ' header__nav--full' : '' %>">
-            <% if (hasAllDepartments) { %>
-              <div class="d-inline-block">
-                <a 
-                  href="javascript:;"
-                  class="header__category"
-                  id="cd-all"
-                  onmouseover="toggleSubmenu('all', this)"
-                  onclick="toggleSubmenu('all', this)"
-                >
-                  <%= header.name_all_departments || _.dictionary('all') %>
-                </a>
-                <nav class="header__submenu header__submenu--full" id="s-all">
-                  <div class="row">
-                    <% _.categories.forEach(({ name, slug, parent, _id }) => { %>
-                      <% if (!parent) { 
-                        %>
-                        <div class="col-12 col-lg-<%- isCategoriesNavFull ? '2' : '4' %>">
-                          <a 
-                            id="sd-all-<%= _id %>" 
-                            href="/<%= slug %>"
-                          >
-                            <%= name %>
-                          </a>
-                        <% const subcategories = _.categories.filter(({ parent }) => parent && parent.slug === slug) %>
-                        <% if (subcategories.length) { %>
-                          <div id="header__submenu-<%= slug %>">
-                            <ul class="header__links">
-                              <% subcategories.forEach(subcategory => { %>
-                                <li>
-                                  <a id="td-all-<%= subcategory._id %>" class="header__submenu-subcategory" href="/<%= subcategory.slug %>">
-                                    <%= subcategory.name %>
-                                  </a>
-                                </li>
-                                <% }) %>
-                              </ul>
-                            </div>
-                          <% } %>
-                          </div>
-                        <% } %>
-                      <% }) %>
-                    </div>
-                  </nav>
-              </div>
-            <% } %>
             <% categories.forEach(({ slug, name, _id}) => { %>
               <% let $categoryLink %>
               <div class="d-inline-block">
