@@ -74,52 +74,40 @@ const hasAllDepartments = header.menu_all_departments
   <% } %>
 
   <div class="top-bar__nav d-none d-md-block">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col d-flex">
-          <nav class="top-bar__page-links">
-            <% if (header.contacts_stripe.pages) { %>
-              <div class="<%= (themeCustom === 'ecom-beauty' && isCategoriesNavFull) ? 'd-lg-none' : '' %>">
-                <% header.contacts_stripe.pages.forEach(({ link, title }) => { %>
-                  <a href="<%= link %>"><%= title %></a>
-                <% }) %>
-              </div>
-            <% } %>
-          </nav>
-          <% if (header.contacts_stripe.phone_wpp) { %>
-            <div class="top-bar__contacts-container">
-              <% if (contacts.whatsapp) { %>
-                <a href="javascript:;" target="_blank" rel="noopener" class="whatsapp-link"
-                  data-tel="<%= contacts.whatsapp.replace(/\D/g, '') %>">
-                  <i class="i-whatsapp"></i>
-                  <%= contacts.whatsapp %>
-                </a>
-                <% } %>
-              <% if (contacts.phone) { %>
-                <a href="tel:+<%= contacts.phone.replace(/\D/g, '') %>" target="_blank" rel="noopener">
-                  <i class="i-phone"></i>
-                  <%= contacts.phone %>
-                </a>
-              <% } %>
-            </div>
-            
-          <% } %>
-        </div>
-        <% if (header.contacts_stripe.socials) { %>
-          <div class="col-auto">
-            <% networks.forEach(network => { %>
-              <% if (contacts[network]) { %>
-                <a href="<%= contacts[network] %>" target="_blank" rel="noopener">
-                  <i class="i-<%= network %>"></i>
-                </a>
-              <% } %>
-            <% }) %>
-          </div>
-        <% } %>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col d-flex">
+        <nav class="top-bar__contacts-container">
+          <a href="https://www.conexaooffice.com.br/" target="_blank" rel="noopener">
+            <img width="80" style="    vertical-align: middle;" src="https://www.conexaooffice.com.br/img/uploads/logotipo-home-png-site.png">
+          </a>
+          <a href="https://www.conexaooffice.com.br/" target="_blank" rel="noopener">                  
+            <span>Veja também nossa linha de escritório</span>
+          </a>  
+          
+        </nav>
+        
+        
       </div>
+        <div class="col-auto">
+          <a href="/pages/venda-corporativa" target="_blank" rel="noopener">
+            <img src="/img/uploads/vendacorporativa.svg" alt="">
+          </a>
+          <a href="/pages/venda-corporativa" target="_blank" rel="noopener">   
+            <span>Venda corporativa </span>
+          </a>
+          <a href="/pages/nossaslojas" target="_blank" rel="noopener">
+            <img src="/img/uploads/nossaslojas.svg" alt="">
+          </a>
+          <a href="/pages/nossaslojas" target="_blank" rel="noopener">   
+            <span>Nossas lojas</span>
+          </a>
+        </div>
     </div>
+    <hr style="background-color:#e26d03">
   </div>
-</div> -->
+</div> 
+
 
 <header class="header">
   <div class="content-center topo">
