@@ -13,11 +13,9 @@
   "categories_list": {
     "featured": [
       "/produtos?Todos os Produtos",
-      "/arquivos-e-ficharios?Arquivos e Fichários",
-      "/lockers?Lockers",
-      "/produtos/mesas?Mesas",
-      "/produtos/cadeiras?Cadeiras",
-      "/moveis-de-aco?Móveis de Aço"
+      "/moveis-de-aco?Móveis de Aço",
+      "/cadeiras?Cadeiras",
+      "/moveis-para-escritorio/mesas?Mesas"
     ],
     "random": 0,
     "full_width": true
