@@ -13,10 +13,10 @@
   "categories_list": {
     "featured": [
       "/produtos?Todos os Produtos",
+      "/moveis-de-aco?Móveis de Aço",
       "/cadeiras?Cadeiras",
       "/moveis-para-escritorio/mesas?Mesas",
-      "/armarios-secretaria-credence-porta-cartolina?Armários",
-      "/moveis-de-aco?Móveis de Aço"
+      "/armarios-secretaria-credence-porta-cartolina?Armários"
     ],
     "random": 0,
     "full_width": true
