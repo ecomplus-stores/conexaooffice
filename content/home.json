@@ -10,16 +10,16 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-conexao-03.png",
-          "mobile_img": "/img/uploads/banner-conexao-mobile-03.png",
-          "link": "https://www.conexaooffice.com.br/moveis-para-escritorio/mesas"
+          "img": "/img/uploads/banner-conexao-04.png",
+          "mobile_img": "/img/uploads/banner-conexao-mobile-04.png",
+          "link": "https://www.conexaooffice.com.br/moveis-de-aco"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-conexao-04.png",
-          "mobile_img": "/img/uploads/banner-conexao-mobile-04.png",
-          "link": "https://www.conexaooffice.com.br/moveis-de-aco"
+          "img": "/img/uploads/banner-conexao-03.png",
+          "mobile_img": "/img/uploads/banner-conexao-mobile-03.png",
+          "link": "https://www.conexaooffice.com.br/moveis-para-escritorio/mesas"
         }
       ]
     },
