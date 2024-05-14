@@ -18,7 +18,7 @@
     },
     {
       "type": "product-specifications",
-      "enabled": true
+      "enabled": false
     },
     {
       "type": "related-products",
