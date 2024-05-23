@@ -343,11 +343,6 @@ div[data-mbz-button-popup-wrapper] {
   display: none !important;
 }
 // HEADER
-.mini-header{
-  .top-bar__nav{
-    display: none;
-  }
-}
 .header {
   position: fixed;
   padding: 0rem 0;
@@ -6303,5 +6298,10 @@ footer {
         }
       }
     }
+  }
+}
+.mini-header{
+  .top-bar__nav{
+    display: none;
   }
 }
