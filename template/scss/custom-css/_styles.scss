@@ -16,6 +16,27 @@
   display: none !important;
 }
 
+.top-bar__nav {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  .container-fluid {
+    padding-top: 10px;
+    background-color: #f0f0f0;
+  }
+  .col-auto {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.top-link {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
 #header {
   nav.header__nav--full {
     padding: 1em 0;
