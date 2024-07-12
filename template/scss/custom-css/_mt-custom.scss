@@ -4896,7 +4896,17 @@ footer {
   }
 }
 
+#linktostoremobile { 
+  display:none; 
+  }
+
+
 @media (max-width: 768px) {
+
+  #linktostoremobile { 
+    display:block; 
+  }
+
   #main {
     position: relative;
     top: 12rem;
