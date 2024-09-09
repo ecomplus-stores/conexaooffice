@@ -10,6 +10,12 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/banner-conexao-.png",
+          "mobile_img": "/img/uploads/banner-conexao-mobile.png"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/moveis-de-aco-desck-top.png",
           "mobile_img": "/img/uploads/3.png",
           "link": "https://www.conexaooffice.com.br/moveis-de-aco"
