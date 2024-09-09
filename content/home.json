@@ -91,7 +91,7 @@
       "collection_id": "632db83d73321213f889bde6:categories:Cadeiras:/cadeiras",
       "title": "Destaques",
       "headless": false,
-      "sort": "highest_price"
+      "sort": "sales"
     },
     {
       "type": "banners-grid",
