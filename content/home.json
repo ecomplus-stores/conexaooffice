@@ -10,8 +10,10 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-conexao-.png",
-          "mobile_img": "/img/uploads/banner-conexao-mobile.png"
+          "img": "/img/uploads/banner-01.png",
+          "mobile_img": "/img/uploads/banner-01-mobile.png",
+          "link": "https://www.conexaooffice.com.br/armario-roupeiro-de-aco-vestiario-academia-8-portas-locker-cinza",
+          "alt": "Armário Roupeiro De Aço Vestiário Academia 8 Portas Locker Cinza"
         },
         {
           "start": "",
