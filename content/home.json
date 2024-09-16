@@ -18,16 +18,18 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/moveis-de-aco-desck-top.png",
-          "mobile_img": "/img/uploads/3.png",
-          "link": "https://www.conexaooffice.com.br/moveis-de-aco"
+          "img": "/img/uploads/banner-02.png",
+          "mobile_img": "/img/uploads/banner-02-mobile.png",
+          "link": "https://www.conexaooffice.com.br/mesa-para-escritrio-reta-com-2-gavetas-140-x-60-ps-em-ao-preto/cinza",
+          "alt": "Mesa Para Escritório Reta Com 2 Gavetas 1,40 X 60 Pés Em Aço Preto/Cinza"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-conexao-02.png",
-          "mobile_img": "/img/uploads/banner-conexao-mobile-02-1-.png",
-          "link": "https://www.conexaooffice.com.br/fabricante-de-cadeiras-plaxmetal"
+          "img": "/img/uploads/banner-03.png",
+          "mobile_img": "/img/uploads/banner-03-mobile.png",
+          "link": "https://www.conexaooffice.com.br/cadeiras",
+          "alt": "Cadeiras"
         },
         {
           "start": "",
