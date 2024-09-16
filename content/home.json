@@ -95,22 +95,22 @@
       "identificador": "banner-triple",
       "banners": [
         {
-          "img": "/img/uploads/design-sem-nome-9-.jpg",
-          "link": "https://www.conexaooffice.com.br/moveis-para-escritorio/mesas",
-          "mobile_img": "/img/uploads/design-sem-nome-9-.jpg",
-          "alt": ""
+          "img": "/img/uploads/mini-01-1-.jpg",
+          "link": "https://www.conexaooffice.com.br/moveis-de-aco",
+          "mobile_img": "",
+          "alt": "Móveis de Aço"
         },
         {
-          "img": "/img/uploads/design-sem-nome-10-.jpg",
+          "img": "/img/uploads/mini-02-1-.jpg",
           "link": "https://www.conexaooffice.com.br/cadeiras",
           "mobile_img": "/img/uploads/design-sem-nome-10-.jpg",
           "alt": "Cadeiras para Escritório"
         },
         {
-          "img": "/img/uploads/design-sem-nome-11-.jpg",
-          "link": "https://www.conexaooffice.com.br/moveis-de-aco",
-          "mobile_img": "/img/uploads/design-sem-nome-11-.jpg",
-          "alt": ""
+          "img": "/img/uploads/mini-03-1-.jpg",
+          "link": "https://www.conexaooffice.com.br/moveis-para-escritorio/mesas",
+          "mobile_img": "",
+          "alt": "Mesas para Escritório"
         }
       ]
     },
