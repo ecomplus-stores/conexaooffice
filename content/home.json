@@ -30,6 +30,12 @@
           "mobile_img": "/img/uploads/banner-03-mobile.png",
           "link": "https://www.conexaooffice.com.br/cadeiras",
           "alt": "Cadeiras"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-01.jpg",
+          "mobile_img": "/img/uploads/banner-01-mobile.jpg"
         }
       ]
     },
