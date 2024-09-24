@@ -8,12 +8,11 @@
       "full_width": true,
       "slides": [
         {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-01.png",
-          "mobile_img": "/img/uploads/banner-01-mobile.png",
-          "link": "https://www.conexaooffice.com.br/armario-roupeiro-de-aco-vestiario-academia-8-portas-locker-cinza",
-          "alt": "Armário Roupeiro De Aço Vestiário Academia 8 Portas Locker Cinza"
+          "start": "2024-09-01T03:00:00.000Z",
+          "end": "2024-10-01T03:00:00.000Z",
+          "img": "/img/uploads/banner-01.jpg",
+          "mobile_img": "/img/uploads/banner-01-mobile.jpg",
+          "link": "https://www.conexaooffice.com.br/armario-roupeiro-de-aco-vestiario-academia-8-portas-locker-cinza"
         },
         {
           "start": "",
@@ -30,13 +29,6 @@
           "mobile_img": "/img/uploads/banner-03-mobile.png",
           "link": "https://www.conexaooffice.com.br/cadeiras",
           "alt": "Cadeiras"
-        },
-        {
-          "start": "2024-09-01T03:00:00.000Z",
-          "end": "2024-10-01T03:00:00.000Z",
-          "img": "/img/uploads/banner-01.jpg",
-          "mobile_img": "/img/uploads/banner-01-mobile.jpg",
-          "link": "https://www.conexaooffice.com.br/armario-roupeiro-de-aco-vestiario-academia-8-portas-locker-cinza"
         }
       ]
     },
