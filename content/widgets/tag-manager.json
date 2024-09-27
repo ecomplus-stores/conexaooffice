@@ -4,9 +4,10 @@
   "desktopOnly": false,
   "enableCheckout": true,
   "options": {
-    "gtmContainerId": "GTM-MKDVZ6R",
+    "gtmContainerId": " GTM-MKDVZ6R",
     "dataLayerVar": "dataLayer",
-    "partytown": false
+    "partytown": false,
+    "isDebug": true
   },
   "headAppend": "src/append/head",
   "bodyAppend": "src/append/body"
