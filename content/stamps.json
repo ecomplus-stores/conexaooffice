@@ -2,7 +2,12 @@
   "stamps_list": [
     {
       "img": "/img/uploads/design-sem-nome.png",
-      "id": "Produto Premium"
+      "id": "Produto Premium",
+      "skus": [
+        "250022554-FIT",
+        "250022557-FIT",
+        "250022550-FIT"
+      ]
     }
   ]
 }
