@@ -1,13 +1,42 @@
 <div class="newsletter-mt">
+
+  <script>
+    // Function to make a POST request with multipart form data
+    function sendDataMailbiz(event) {
+      event.preventDefault();
+      function postData(url, formData) {
+        return fetch(url, {
+          method: 'POST',
+          body: formData,
+        })
+        .then(data => {
+          console.log('sending with success')
+          document.querySelector('.ml-form-success').style.display = 'block'
+        })
+        .catch(error => console.error('Error:', error));
+      }
+
+      const form = document.getElementById('mgnr-biz');
+      const formData = new FormData(form);
+
+      // Make the POST request
+      const apiUrl = 'https://mbiz.mailclick.me/subscribe.php';
+      postData(apiUrl, formData); 
+      
+    }
+  </script>
+
   <div class="content-form">
     <p>Cadastre-se em nossa newsletter para receber novidades e promoções.</p>
-    <form action="https://mbiz.mailclick.me/subscribe.php" method="post" accept-charset="UTF-8">
+    <form accept-charset="UTF-8" id="mgnr-biz">
       <div class="o-form-row">
         <input type="text" name="FormValue_Fields[EmailAddress]" value="" id="FormValue_EmailAddress" placeholder="E-mail" />
+        <strong class="ml-form-success" style="color:#fff">CADASTRADO COM SUCESSO</strong>
       </div>
-      <input type="submit" name="FormButton_Subscribe" value="Confira" id="FormButton_Subscribe" /><input type="hidden"
-        name="FormValue_ListID" value="5014" />
-      <input type="hidden" name="FormValue_Command" value="Subscriber.Add" id="FormValue_Command" />
+      <input onclick="sendDataMailbiz(event)" type="submit" name="FormButton_Subscribe" value="Cadastrar" id="FormButton_Subscribe" />
+      <!--
+      <input type="hidden" name="FormValue_ListID" value="5014" />
+      <input type="hidden" name="FormValue_Command" value="Subscriber.Add" id="FormValue_Command" />-->
     </form>
   </div>
 </div>
