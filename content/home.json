@@ -8,25 +8,27 @@
       "full_width": true,
       "slides": [
         {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/linha-de-moveis-aco-descktop-1-.png",
-          "mobile_img": "/img/uploads/linha-de-moveis-aco-mobile-1-.png",
-          "link": "https://www.conexaooffice.com.br/moveis-de-aco"
+          "start": "2024-09-01T03:00:00.000Z",
+          "end": "2024-10-01T03:00:00.000Z",
+          "img": "/img/uploads/banner-01.jpg",
+          "mobile_img": "/img/uploads/banner-01-mobile.jpg",
+          "link": "https://www.conexaooffice.com.br/armario-roupeiro-de-aco-vestiario-academia-8-portas-locker-cinza"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-conexao-02.png",
-          "mobile_img": "/img/uploads/banner-conexao-mobile-02-1-.png",
-          "link": "https://www.conexaooffice.com.br/fabricante-de-cadeiras-plaxmetal"
+          "img": "/img/uploads/banner-02.png",
+          "mobile_img": "/img/uploads/banner-02-mobile.png",
+          "link": "https://www.conexaooffice.com.br/mesa-para-escritrio-reta-com-2-gavetas-140-x-60-ps-em-ao-preto/cinza",
+          "alt": "Mesa Para Escritório Reta Com 2 Gavetas 1,40 X 60 Pés Em Aço Preto/Cinza"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-conexao-03.png",
-          "mobile_img": "/img/uploads/banner-conexao-mobile-03.png",
-          "link": "https://www.conexaooffice.com.br/moveis-para-escritorio/mesas"
+          "img": "/img/uploads/banner-03.png",
+          "mobile_img": "/img/uploads/banner-03-mobile.png",
+          "link": "https://www.conexaooffice.com.br/cadeiras",
+          "alt": "Cadeiras"
         }
       ]
     },
@@ -85,29 +87,29 @@
       "collection_id": "632db83d73321213f889bde6:categories:Cadeiras:/cadeiras",
       "title": "Destaques",
       "headless": false,
-      "sort": "highest_price"
+      "sort": "sales"
     },
     {
       "type": "banners-grid",
       "identificador": "banner-triple",
       "banners": [
         {
-          "img": "/img/uploads/mosaicosdesk_1.png",
-          "link": "https://marketing.conexaooffice.com.br/orcamento-personalizado",
+          "img": "/img/uploads/mini-01-1-.jpg",
+          "link": "https://www.conexaooffice.com.br/moveis-de-aco",
           "mobile_img": "",
-          "alt": ""
+          "alt": "Móveis de Aço"
         },
         {
-          "img": "/img/uploads/mosaicosdesk_2.png",
-          "link": "https://conexaooffice.netlify.app/produtos/cadeiras",
-          "mobile_img": "",
+          "img": "/img/uploads/mini-02-1-.jpg",
+          "link": "https://www.conexaooffice.com.br/cadeiras",
+          "mobile_img": "/img/uploads/design-sem-nome-10-.jpg",
           "alt": "Cadeiras para Escritório"
         },
         {
-          "img": "/img/uploads/mosaicosdesk_3.png",
-          "link": "https://conexaooffice.netlify.app/moveis-de-aco",
+          "img": "/img/uploads/mini-03-1-.jpg",
+          "link": "https://www.conexaooffice.com.br/moveis-para-escritorio/mesas",
           "mobile_img": "",
-          "alt": ""
+          "alt": "Mesas para Escritório"
         }
       ]
     },

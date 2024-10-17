@@ -12,11 +12,12 @@
   },
   "categories_list": {
     "featured": [
-      "/produtos?Todos os Produtos",
+      "/moveis-para-escritorio?todos-produtos",
       "/moveis-de-aco?Móveis de Aço",
       "/cadeiras?Cadeiras",
       "/moveis-para-escritorio/mesas?Mesas",
       "/armarios-secretaria-credence-porta-cartolina?Armários",
+      "/produtos/gaveteiros?Gaveteiros e Arquivos",
       "/descontos/promocoes-de-moveis-para-escritorio?Descontos"
     ],
     "random": 0,
