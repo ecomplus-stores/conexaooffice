@@ -263,13 +263,13 @@ select {
             }
             .prices__discount {
               color: var(--grey-70);
-              font-size: 1.2rem;
+              font-size: 2rem;
             }
             > span {
               .prices__installments,
-              .prices__discount {
+              .prices__discount>span {
                 color: var(--black) !important;
-                font-size: 1.2rem;
+                font-size: 2rem;
               }
             }
           }
@@ -688,7 +688,7 @@ div[data-mbz-button-popup-wrapper] {
                           }
                           .prices__value {
                             font-size: 1.7rem;
-                            font-weight: 600;
+                            font-weight: 300;
                           }
                         }
                         .product-card__buy {
@@ -1587,12 +1587,13 @@ header[class~="mini-header"] {
       margin-bottom: 0.5rem;
     }
     .prices__value {
+      font-weight: 300;
       font-size: 1.6rem !important;
       color: var(--black);
       margin-bottom: 1.6rem;
     }
     .prices__discount {
-      font-size: 1.2rem;
+      font-size: 2rem;
     }
     > span {
       .prices__installments {
@@ -1604,7 +1605,7 @@ header[class~="mini-header"] {
         }
       }
       .prices__discount {
-        font-size: 1.3rem;
+        font-size: 2rem;
         font-weight: 500;
         span {
           font-weight: 800;
@@ -1612,7 +1613,7 @@ header[class~="mini-header"] {
         }
         .prices__discount-label {
           font-size: 1.3rem;
-          font-weight: 500;
+          font-weight: 300;
           color: var(--black);
         }
       }
@@ -2201,7 +2202,7 @@ header[class~="mini-header"] {
                         position: relative;
                         color: var(--black);
                         font-size: 2.5rem;
-                        font-weight: 700;
+                        font-weight: 300;
                         gap: 2rem;
                         width: 100%;
                         .offers-notification {
@@ -2242,7 +2243,7 @@ header[class~="mini-header"] {
                       }
                       .prices__discount {
                         color: var(--black);
-                        font-size: 1.3rem;
+                        font-size: 2rem;
                       }
                     }
                     .content-favorite-button {
