@@ -77,16 +77,6 @@
       "headless": false
     },
     {
-      "type": "collection-shelf",
-      "shuffle": false,
-      "limit": 12,
-      "page": 1,
-      "collection_id": "671f9f4786609e53f85e6cfd:categories:Black Friday:/black-friday-de-moveis-para-escritorio",
-      "sort": "views",
-      "headless": true,
-      "title": "Black Friday"
-    },
-    {
       "type": "banners-grid",
       "identificador": "banner-triple",
       "banners": [
@@ -109,6 +99,14 @@
           "alt": "Mesas para Escritório"
         }
       ]
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "collection_id": "632db92a73321213f889bf2d:categories:Móveis de Aço:/moveis-de-aco",
+      "title": "Móveis de Aço"
     },
     {
       "type": "collection-shelf",
