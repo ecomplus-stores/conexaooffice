@@ -120,6 +120,16 @@
       "link": "https://web.whatsapp.com/send?phone=+5511987260860&text=Ol%C3%A1!%20Tudo%20bem?%20Tendo%20D%C3%BAvidas,%20%C3%A9%20s%C3%B3%20chamar%20aqui!%20:)",
       "mobile_img": "/img/uploads/fale-com-um-de-nosso-consultores-mobile-1-.jpg",
       "alt": ""
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "collection_id": "671f9f4786609e53f85e6cfd:categories:Black Friday:/black-friday-de-moveis-para-escritorio",
+      "sort": "views",
+      "headless": true,
+      "title": "Black Friday"
     }
   ]
 }
