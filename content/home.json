@@ -47,6 +47,30 @@
       "title": "Black Friday"
     },
     {
+      "type": "banners-grid",
+      "identificador": "banner-triple",
+      "banners": [
+        {
+          "img": "/img/uploads/mini-01-1-.jpg",
+          "link": "https://www.conexaooffice.com.br/moveis-de-aco",
+          "mobile_img": "",
+          "alt": "Móveis de Aço"
+        },
+        {
+          "img": "/img/uploads/mini-02-1-.jpg",
+          "link": "https://www.conexaooffice.com.br/cadeiras",
+          "mobile_img": "/img/uploads/design-sem-nome-10-.jpg",
+          "alt": "Cadeiras para Escritório"
+        },
+        {
+          "img": "/img/uploads/mini-03-1-.jpg",
+          "link": "https://www.conexaooffice.com.br/moveis-para-escritorio/mesas",
+          "mobile_img": "",
+          "alt": "Mesas para Escritório"
+        }
+      ]
+    },
+    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 13,
@@ -98,30 +122,6 @@
       "title": "Destaques",
       "headless": false,
       "sort": "sales"
-    },
-    {
-      "type": "banners-grid",
-      "identificador": "banner-triple",
-      "banners": [
-        {
-          "img": "/img/uploads/mini-01-1-.jpg",
-          "link": "https://www.conexaooffice.com.br/moveis-de-aco",
-          "mobile_img": "",
-          "alt": "Móveis de Aço"
-        },
-        {
-          "img": "/img/uploads/mini-02-1-.jpg",
-          "link": "https://www.conexaooffice.com.br/cadeiras",
-          "mobile_img": "/img/uploads/design-sem-nome-10-.jpg",
-          "alt": "Cadeiras para Escritório"
-        },
-        {
-          "img": "/img/uploads/mini-03-1-.jpg",
-          "link": "https://www.conexaooffice.com.br/moveis-para-escritorio/mesas",
-          "mobile_img": "",
-          "alt": "Mesas para Escritório"
-        }
-      ]
     },
     {
       "type": "responsive-banner",
