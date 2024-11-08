@@ -33,8 +33,38 @@
       ]
     },
     {
+      "type": "banners-grid-mt",
+      "identificador": "content-banner-tarja",
+      "banners": [
+        {
+          "img": "/img/icons-tarja/percent.svg",
+          "link": "#",
+          "mobile_img": "",
+          "alt": "PARCELE SUAS COMPRAS! EM ATÉ 10X SEM JUROS"
+        },
+        {
+          "img": "/img/icons-tarja/frete.svg",
+          "link": "#",
+          "mobile_img": "",
+          "alt": "RECEBA EM CASA! ENTREGAMOS PARA TODO O BRASIL"
+        },
+        {
+          "img": "/img/icons-tarja/cartao.svg",
+          "link": "#",
+          "mobile_img": "",
+          "alt": "COMPRE COM CARTÃO BNDES! CONSULTE CONDIÇÕES"
+        },
+        {
+          "img": "/img/icons-tarja/contato.svg",
+          "link": "#",
+          "mobile_img": "",
+          "alt": "SOLICITE SEU PROJETO! FALE COM UM DE NOSSOS VENDEDORES"
+        }
+      ]
+    },
+    {
       "type": "info-bar",
-      "enabled": true
+      "enabled": false
     },
     {
       "type": "collection-shelf",
@@ -78,36 +108,6 @@
       "collection_id": "632db92a73321213f889bf2d:categories:Móveis de Aço:/moveis-de-aco",
       "sort": "views",
       "title": "Móveis de Aço"
-    },
-    {
-      "type": "banners-grid-mt",
-      "identificador": "content-banner-tarja",
-      "banners": [
-        {
-          "img": "/img/icons-tarja/percent.svg",
-          "link": "#",
-          "mobile_img": "",
-          "alt": "PARCELE SUAS COMPRAS! EM ATÉ 10X SEM JUROS"
-        },
-        {
-          "img": "/img/icons-tarja/frete.svg",
-          "link": "#",
-          "mobile_img": "",
-          "alt": "RECEBA EM CASA! ENTREGAMOS PARA TODO O BRASIL"
-        },
-        {
-          "img": "/img/icons-tarja/cartao.svg",
-          "link": "#",
-          "mobile_img": "",
-          "alt": "COMPRE COM CARTÃO BNDES! CONSULTE CONDIÇÕES"
-        },
-        {
-          "img": "/img/icons-tarja/contato.svg",
-          "link": "#",
-          "mobile_img": "",
-          "alt": "SOLICITE SEU PROJETO! FALE COM UM DE NOSSOS VENDEDORES"
-        }
-      ]
     },
     {
       "type": "newsletter-mt",
