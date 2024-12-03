@@ -80,22 +80,22 @@
       "identificador": "banner-triple",
       "banners": [
         {
-          "img": "/img/uploads/mini-01-2-.jpg",
-          "link": "https://www.conexaooffice.com.br/cadeira-home-e-office",
+          "img": "/img/uploads/mini-01-1-.jpg",
+          "link": "https://www.conexaooffice.com.br/moveis-de-aco",
           "mobile_img": "",
-          "alt": "Cadeiras para Home e Office "
+          "alt": "Móveis de Aço"
         },
         {
-          "img": "/img/uploads/mini-02-2-.jpg",
-          "link": "https://www.conexaooffice.com.br/cadeira-de-escritorio-presidente-bergen-alta-cafe-base-rodizio",
-          "mobile_img": "/img/uploads/mini-03-2-.jpg",
-          "alt": "Cadeira Presidente Bergen"
+          "img": "/img/uploads/mini-02-1-.jpg",
+          "link": "https://www.conexaooffice.com.br/cadeiras",
+          "mobile_img": "",
+          "alt": "Cadeiras"
         },
         {
-          "img": "/img/uploads/mini-03-14-11.jpg",
-          "link": "https://www.conexaooffice.com.br/cadeira-office-esteirinha-base-fixa-corino-cinza",
+          "img": "/img/uploads/mini-03-1-.jpg",
+          "link": "https://www.conexaooffice.com.br/moveis-para-escritorio/mesas",
           "mobile_img": "",
-          "alt": "Cadeira esteirinha"
+          "alt": "Mesas"
         }
       ]
     },
