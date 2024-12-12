@@ -361,3 +361,7 @@ $footerColor: red;
   color:#FFFFFF;
   background-color:#000 !important;
 }
+// update with consent
+.minicart__btn-checkout, .cart__btn-checkout {
+    display: none;
+}
