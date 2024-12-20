@@ -28,6 +28,11 @@
           "img": "/img/uploads/banner-03-1-.png",
           "mobile_img": "/img/uploads/banner-03-mobile.png",
           "link": "https://www.conexaooffice.com.br/cadeiras"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-pop-1-.jpg"
         }
       ]
     },
