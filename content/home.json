@@ -32,7 +32,8 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-pop-1-.jpg"
+          "img": "/img/uploads/banner-pop-1-.jpg",
+          "mobile_img": "/img/uploads/banner-pop-mobile-1-.jpg"
         }
       ]
     },
