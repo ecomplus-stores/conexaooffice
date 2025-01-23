@@ -10,6 +10,13 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/banner-01-17-.jpg",
+          "link": "https://www.conexaooffice.com.br/search?term=",
+          "mobile_img": "/img/uploads/banner-01-mobile-15-.jpg"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/banner-01-13-.jpg",
           "mobile_img": "/img/uploads/banner-01-mobile-12-.jpg",
           "link": "https://www.conexaooffice.com.br/search?term=escrit%C3%B3rio"
@@ -28,13 +35,6 @@
           "img": "/img/uploads/banner-03-1-.png",
           "mobile_img": "/img/uploads/banner-03-mobile.png",
           "link": "https://www.conexaooffice.com.br/cadeiras"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-01-17-.jpg",
-          "link": "https://www.conexaooffice.com.br/search?term=",
-          "mobile_img": "/img/uploads/banner-01-mobile-15-.jpg"
         }
       ]
     },
