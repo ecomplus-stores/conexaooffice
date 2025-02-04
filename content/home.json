@@ -42,6 +42,13 @@
           "img": "/img/uploads/banner-03-1-.png",
           "mobile_img": "/img/uploads/banner-03-mobile.png",
           "link": "https://www.conexaooffice.com.br/cadeiras"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-03-8-.jpg",
+          "link": "https://www.conexaooffice.com.br/search?term=",
+          "mobile_img": "/img/uploads/banner-03-mobile-9-.jpg"
         }
       ]
     },
