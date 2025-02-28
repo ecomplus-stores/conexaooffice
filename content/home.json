@@ -10,9 +10,10 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-01-17-.jpg",
-          "link": "https://www.conexaooffice.com.br/moveis-para-escritorio/todos-produtos",
-          "mobile_img": "/img/uploads/banner-01-mobile-15-.jpg"
+          "img": "/img/uploads/banner-01-.jpg",
+          "link": "https://www.conexaooffice.com.br/moveis-de-aco",
+          "mobile_img": "/img/uploads/banner-01-mobile-.jpg",
+          "alt": "Móveis de Aço"
         },
         {
           "start": "",
