@@ -10,6 +10,13 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/banner-01-abril.jpg",
+          "mobile_img": "/img/uploads/banner-01-abril-mobile.jpg",
+          "link": "https://www.conexaooffice.com.br/search?term="
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/banner-02-14-.jpg",
           "mobile_img": "/img/uploads/banner-02-mobile-13-.jpg",
           "link": "https://www.conexaooffice.com.br/moveis-para-escritorio/mesas"
@@ -27,13 +34,6 @@
           "img": "/img/uploads/banner-03-1-.png",
           "mobile_img": "/img/uploads/banner-03-mobile.png",
           "link": "https://www.conexaooffice.com.br/cadeiras"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-01-abril.jpg",
-          "mobile_img": "/img/uploads/banner-01-abril-mobile.jpg",
-          "link": "https://www.conexaooffice.com.br/search?term="
         }
       ]
     },
