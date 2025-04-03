@@ -71,7 +71,9 @@
         },
         {
           "img": "/img/uploads/30-anos.svg",
-          "title": "30 anos de experiência"
+          "link": "#",
+          "mobile_img": "",
+          "alt": "30 ANOS DE EXPERIÊNCIA"
         }
       ]
     },
