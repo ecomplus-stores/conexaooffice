@@ -64,16 +64,16 @@
           "alt": "COMPRE COM CARTÃO BNDES! CONSULTE CONDIÇÕES"
         },
         {
-          "img": "/img/icons-tarja/contato.svg",
-          "link": "#",
-          "mobile_img": "",
-          "alt": "SOLICITE SEU PROJETO! FALE COM UM DE NOSSOS VENDEDORES"
-        },
-        {
           "img": "/img/uploads/30-anos.svg",
           "link": "#",
           "mobile_img": "",
           "alt": "30 ANOS DE EXPERIÊNCIA"
+        },
+        {
+          "img": "/img/icons-tarja/contato.svg",
+          "link": "#",
+          "mobile_img": "",
+          "alt": "SOLICITE SEU PROJETO! FALE COM UM DE NOSSOS VENDEDORES"
         }
       ]
     },
