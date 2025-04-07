@@ -124,12 +124,26 @@
       "shuffle": false,
       "limit": 12,
       "page": 1,
+      "collection_id": "671fae5d86609e53f85e9211:categories:Móveis de Madeira:/moveis-de-madeira-para-escritorio",
+      "sort": "views",
+      "link": "https://www.conexaooffice.com.br/moveis-de-madeira-para-escritorio"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
       "collection_id": "632dbc4c73321213f889c577:categories:Cadeiras:/cadeiras",
       "title": "Cadeiras"
     },
     {
       "type": "newsletter-mt",
       "active": true
+    },
+    {
+      "type": "dynamic-showcase",
+      "load_more": true,
+      "sort": "news"
     }
   ]
 }
