@@ -8,13 +8,6 @@
       "full_width": true,
       "slides": [
         {
-          "start": "2025-05-08T17:29:29.315Z",
-          "end": "2026-09-04T17:29:30.473Z",
-          "img": "/img/uploads/banner-01-maio.jpg",
-          "mobile_img": "/img/uploads/banner-01-mobile-maio.jpg",
-          "link": "https://www.conexaooffice.com.br/moveis-escolares"
-        },
-        {
           "start": "",
           "end": "",
           "img": "/img/uploads/banner-01-abril.jpg",
@@ -41,6 +34,13 @@
           "img": "/img/uploads/banner-03-1-.png",
           "mobile_img": "/img/uploads/banner-03-mobile.png",
           "link": "https://www.conexaooffice.com.br/cadeiras"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-01.jpg",
+          "mobile_img": "/img/uploads/banner-01-mobile.jpg",
+          "link": "https://www.conexaooffice.com.br/moveis-escolares"
         }
       ]
     },
