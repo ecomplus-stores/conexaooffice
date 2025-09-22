@@ -80,12 +80,11 @@
     {
       "type": "collection-shelf",
       "shuffle": false,
-      "limit": 13,
+      "limit": 12,
       "page": 1,
-      "collection_id": "632dbed173321213f889ca29:categories:Mesas:/moveis-para-escritorio/mesas",
-      "sort": "sales",
-      "title": "Mesas",
-      "headless": false
+      "collection_id": "632db92a73321213f889bf2d:categories:Móveis de Aço:/moveis-de-aco",
+      "title": "Móveis de Aço",
+      "sort": "sales"
     },
     {
       "type": "banners-grid",
@@ -114,11 +113,12 @@
     {
       "type": "collection-shelf",
       "shuffle": false,
-      "limit": 12,
+      "limit": 13,
       "page": 1,
-      "collection_id": "632db92a73321213f889bf2d:categories:Móveis de Aço:/moveis-de-aco",
-      "title": "Móveis de Aço",
-      "sort": "sales"
+      "collection_id": "632dbed173321213f889ca29:categories:Mesas:/moveis-para-escritorio/mesas",
+      "sort": "sales",
+      "title": "Mesas",
+      "headless": false
     },
     {
       "type": "collection-shelf",
