@@ -117,7 +117,8 @@
       "limit": 12,
       "page": 1,
       "collection_id": "632db92a73321213f889bf2d:categories:Móveis de Aço:/moveis-de-aco",
-      "title": "Móveis de Aço"
+      "title": "Móveis de Aço",
+      "sort": "sales"
     },
     {
       "type": "collection-shelf",
