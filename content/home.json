@@ -134,7 +134,8 @@
       "limit": 12,
       "page": 1,
       "collection_id": "632dbc4c73321213f889c577:categories:Cadeiras:/cadeiras",
-      "title": "Cadeiras"
+      "title": "Cadeiras",
+      "sort": "sales"
     },
     {
       "type": "newsletter-mt",
