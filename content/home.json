@@ -139,6 +139,15 @@
       "sort": "sales"
     },
     {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "collection_id": "6375327f73321213f8de9854:categories:Arquivos e Fichários:/moveis-de-aco/arquivos-e-ficharios",
+      "sort": "sales",
+      "title": "Arquivos"
+    },
+    {
       "type": "newsletter-mt",
       "active": true
     }
