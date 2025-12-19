@@ -365,3 +365,9 @@ $footerColor: red;
 .minicart__btn-checkout, .cart__btn-checkout {
     display: none;
 }
+// quebra de texto frete
+@media(min-width: 769px) {
+.shipping-line + small {
+width: 50%
+}
+}
