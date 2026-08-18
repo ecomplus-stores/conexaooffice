@@ -148,6 +148,13 @@
       "title": "Arquivos"
     },
     {
+      "type": "brands-carousel",
+      "sort": "",
+      "limit": 24,
+      "offset": 0,
+      "autoplay": 3000
+    },
+    {
       "type": "newsletter-mt",
       "active": true
     }
