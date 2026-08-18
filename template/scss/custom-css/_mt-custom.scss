@@ -1196,6 +1196,19 @@ header[class~="mini-header"] {
   }
 }
 
+// espaço interno para as setas não ficarem em cima das logos no mobile
+// (mesmo gutter usado pelo .products-carousel)
+.brands-carousel {
+  padding: 0 var(--spacer-2);
+
+  @media (min-width: 768px) {
+    padding: 0 3rem;
+  }
+  @media (min-width: 992px) {
+    padding: 0 4rem;
+  }
+}
+
 #quickview {
   .product-quickview__header {
     font-size: 0.001em;

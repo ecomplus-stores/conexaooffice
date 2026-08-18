@@ -148,11 +148,8 @@
       "title": "Arquivos"
     },
     {
-      "type": "custom-html",
-      "html": "<h4 class=\"products-carousel__title\"><span>Nossos Clientes</span></h4>"
-    },
-    {
       "type": "brands-carousel",
+      "title": "Nossos Clientes",
       "sort": "",
       "limit": 24,
       "offset": 0,
