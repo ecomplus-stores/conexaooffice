@@ -1209,6 +1209,20 @@ header[class~="mini-header"] {
   }
 }
 
+// título do carrossel de marcas, igual ao das estantes de produtos
+// (negrito, maiúsculas, sublinhado só na largura do texto)
+.brands-carousel__title {
+  display: table;
+  margin: 0 auto 1.5rem;
+  padding-bottom: .5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--primary-color);
+}
+
 #quickview {
   .product-quickview__header {
     font-size: 0.001em;
